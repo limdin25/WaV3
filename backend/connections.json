@@ -1,0 +1,84 @@
+[
+  {
+    "id": "5affdb1b-0d54-41ab-b503-c66a2ececcef",
+    "userId": "e4f743e3-0114-4ab6-921c-6b62d2a24683",
+    "type": "whatsapp_pending",
+    "authUrl": "https://account.unipile.com/eyJ1cmwiOiJodHRwczovL2FwaTE1LnVuaXBpbGUuY29tOjE0NTA3IiwidG9rZW4iOiJJekdiZGp6eS5heW9Ia3M3UWRMbmRJNHRPVE5YYVVacUxyT1lqdzNOL0hZT096OWp6MlQ0PSJ9",
+    "createdAt": "2025-07-01T11:30:28.333Z"
+  },
+  {
+    "id": "2c25919b-2911-45ab-94d4-33e6314888df",
+    "userId": "e4f743e3-0114-4ab6-921c-6b62d2a24683",
+    "type": "whatsapp_pending",
+    "authUrl": "https://account.unipile.com/eyJ1cmwiOiJodHRwczovL2FwaTE1LnVuaXBpbGUuY29tOjE0NTA3IiwidG9rZW4iOiJQSDIrT2hsbC5oeW1OZXgvK0I4SFZrcHU2NHN1T3dOcVArTTFIWlBXTWNyMWFoSjZPZW5FPSJ9",
+    "createdAt": "2025-07-01T12:12:23.050Z"
+  },
+  {
+    "id": "45a28a0a-f2ba-40cc-9216-2ae299ea729f",
+    "userId": "e4f743e3-0114-4ab6-921c-6b62d2a24683",
+    "type": "whatsapp",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "status": "connected",
+    "createdAt": "2025-07-01T12:32:43.334Z"
+  },
+  {
+    "id": "7b223ebf-f8e9-4f7f-8dc7-51cdeca950d9",
+    "userId": "e4f743e3-0114-4ab6-921c-6b62d2a24683",
+    "type": "whatsapp",
+    "accountId": "65YiMOuISpK5tbDdCzfw_A",
+    "status": "connected",
+    "createdAt": "2025-07-01T12:32:43.334Z"
+  },
+  {
+    "id": "c4644fa3-0402-459a-8e4f-f4b4628a32ae",
+    "userId": "e4f743e3-0114-4ab6-921c-6b62d2a24683",
+    "type": "whatsapp",
+    "accountId": "8EfuBIO6SQuy4krX8GhffQ",
+    "status": "connected",
+    "createdAt": "2025-07-01T12:32:43.334Z"
+  },
+  {
+    "id": "c6de1349-0955-43c4-9871-a6da48c3cb38",
+    "userId": "e4f743e3-0114-4ab6-921c-6b62d2a24683",
+    "type": "whatsapp",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "status": "connected",
+    "createdAt": "2025-07-01T12:32:43.334Z"
+  },
+  {
+    "id": "b20e6087-443e-4a36-aa27-46dcdaef73eb",
+    "userId": "e4f743e3-0114-4ab6-921c-6b62d2a24683",
+    "type": "whatsapp",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "status": "connected",
+    "createdAt": "2025-07-01T12:32:43.334Z"
+  },
+  {
+    "userId": "e4f743e3-0114-4ab6-921c-6b62d2a24683",
+    "type": "crm_oauth_state",
+    "state": "2dc80f13-095d-4ddd-9d02-5ad93a8e30ce",
+    "timestamp": 1751384897561
+  },
+  {
+    "userId": "e4f743e3-0114-4ab6-921c-6b62d2a24683",
+    "type": "crm_oauth_state",
+    "state": "e0c03542-6fc4-4081-a1d5-f99f1d94b2f9",
+    "timestamp": 1751399658591
+  },
+  {
+    "userId": "e4f743e3-0114-4ab6-921c-6b62d2a24683",
+    "type": "crm_oauth_state",
+    "state": "2fd1a1d9-68d9-43ab-ade9-65ce0ba6b17e",
+    "timestamp": 1751399688107
+  },
+  {
+    "id": "d8271d68-7823-47c7-a64d-351b47b99d3b",
+    "userId": "e4f743e3-0114-4ab6-921c-6b62d2a24683",
+    "type": "crm",
+    "accessToken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoQ2xhc3MiOiJMb2NhdGlvbiIsImF1dGhDbGFzc0lkIjoiNWVqOEh3aEZlRXVVdUZ5ckllTE8iLCJzb3VyY2UiOiJJTlRFR1JBVElPTiIsInNvdXJjZUlkIjoiNjg1YmYxNTQ2ZTRkN2E4MWYzNmZkY2IzLW1jZWdidnUxIiwiY2hhbm5lbCI6Ik9BVVRIIiwicHJpbWFyeUF1dGhDbGFzc0lkIjoiNWVqOEh3aEZlRXVVdUZ5ckllTE8iLCJvYXV0aE1ldGEiOnsic2NvcGVzIjpbImNvbnZlcnNhdGlvbnMucmVhZG9ubHkiLCJjb252ZXJzYXRpb25zLndyaXRlIiwiY29udmVyc2F0aW9ucy9yZXBvcnRzLnJlYWRvbmx5IiwiY29udmVyc2F0aW9ucy9saXZlY2hhdC53cml0ZSIsImNvbnRhY3RzLnJlYWRvbmx5IiwiY29udGFjdHMud3JpdGUiLCJzYWFzL2xvY2F0aW9uLnJlYWQiLCJvYXV0aC53cml0ZSIsIm9hdXRoLnJlYWRvbmx5IiwibG9jYXRpb25zLnJlYWRvbmx5IiwibG9jYXRpb25zL2N1c3RvbVZhbHVlcy5yZWFkb25seSIsImxvY2F0aW9ucy9jdXN0b21WYWx1ZXMud3JpdGUiLCJsb2NhdGlvbnMvY3VzdG9tRmllbGRzLnJlYWRvbmx5IiwibG9jYXRpb25zL2N1c3RvbUZpZWxkcy53cml0ZSIsImxvY2F0aW9ucy90YWdzLnJlYWRvbmx5IiwibG9jYXRpb25zL3RhZ3Mud3JpdGUiXSwiY2xpZW50IjoiNjg1YmYxNTQ2ZTRkN2E4MWYzNmZkY2IzIiwidmVyc2lvbklkIjoiNjg1YmYxNTQ2ZTRkN2E4MWYzNmZkY2IzIiwiY2xpZW50S2V5IjoiNjg1YmYxNTQ2ZTRkN2E4MWYzNmZkY2IzLW1jZWdidnUxIn0sImlhdCI6MTc1MTM5OTg0Ny40MjYsImV4cCI6MTc1MTQ4NjI0Ny40MjZ9.isbioGeNiXVPZIK1-8pYGHLmCTpssoxPptab1FkCesu-TC55HmJS8hEsPD19fRBqB7VA42fNsDzKnrr_hHwlaSxpYRXWhWDm8Yo5U9GqZcDzyHmFwaBERpaEU7ZXJheCEP4ZzC5a_N74qtINVqtox0HivqlbC6fgpYwvSquhmDWq6tL4iULOrpHh9brzl4OGnJloTbBMCGdW7PA2SqOlga9GSlWgqnPTLJewUAUVdY1rOVPDf4cQuavrPhEbmofzUH0CNmJymfemdKs2LsAW3V5ZF0uCK0vQgdoYTbLlxWUyI1UuT7wJElVYqIsjjq39eQJsCz0KCZhhIAzDCCWxGoxoX4LNLNXQ_fjUb4DyhTSbvgO7h71op1SIbZrYHeXDITZQHtGKEOhQTavQ8woIGDKrW1CYU_1CskXU4zf245jLF4Iv1PVYP9eLqIxIg5jvfr2WTsSnNwPh7eMnsfL2CPVwkGduTolI7oBHTKQXxVRkkyWMuCwAIW_PRUua6Y_QOl100UqVg8CKAhPp4rj0KI3BygJD-U81L2eRUoUpPwGOS_1SmwDpvVhY2tLLbpI6k8qe-42-08MvhC3Gb1rcrSJtZgdtO_ENgkxIJVus-VDYwtRKxACqcsZWYb_nVxBZaUBlpbnMxsxS_9xWe9aUGDkSWmzGIItZLFPTgSHbjco",
+    "refreshToken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoQ2xhc3MiOiJMb2NhdGlvbiIsImF1dGhDbGFzc0lkIjoiNWVqOEh3aEZlRXVVdUZ5ckllTE8iLCJzb3VyY2UiOiJJTlRFR1JBVElPTiIsInNvdXJjZUlkIjoiNjg1YmYxNTQ2ZTRkN2E4MWYzNmZkY2IzLW1jZWdidnUxIiwiY2hhbm5lbCI6Ik9BVVRIIiwicHJpbWFyeUF1dGhDbGFzc0lkIjoiNWVqOEh3aEZlRXVVdUZ5ckllTE8iLCJvYXV0aE1ldGEiOnsic2NvcGVzIjpbImNvbnZlcnNhdGlvbnMucmVhZG9ubHkiLCJjb252ZXJzYXRpb25zLndyaXRlIiwiY29udmVyc2F0aW9ucy9yZXBvcnRzLnJlYWRvbmx5IiwiY29udmVyc2F0aW9ucy9saXZlY2hhdC53cml0ZSIsImNvbnRhY3RzLnJlYWRvbmx5IiwiY29udGFjdHMud3JpdGUiLCJzYWFzL2xvY2F0aW9uLnJlYWQiLCJvYXV0aC53cml0ZSIsIm9hdXRoLnJlYWRvbmx5IiwibG9jYXRpb25zLnJlYWRvbmx5IiwibG9jYXRpb25zL2N1c3RvbVZhbHVlcy5yZWFkb25seSIsImxvY2F0aW9ucy9jdXN0b21WYWx1ZXMud3JpdGUiLCJsb2NhdGlvbnMvY3VzdG9tRmllbGRzLnJlYWRvbmx5IiwibG9jYXRpb25zL2N1c3RvbUZpZWxkcy53cml0ZSIsImxvY2F0aW9ucy90YWdzLnJlYWRvbmx5IiwibG9jYXRpb25zL3RhZ3Mud3JpdGUiXSwiY2xpZW50IjoiNjg1YmYxNTQ2ZTRkN2E4MWYzNmZkY2IzIiwidmVyc2lvbklkIjoiNjg1YmYxNTQ2ZTRkN2E4MWYzNmZkY2IzIiwiY2xpZW50S2V5IjoiNjg1YmYxNTQ2ZTRkN2E4MWYzNmZkY2IzLW1jZWdidnUxIn0sImlhdCI6MTc1MTM5OTg0Ny40MzMsImV4cCI6MTc4MjkzNTg0Ny40MzMsInVuaXF1ZUlkIjoiMTUyN2I4YWUtYWMxZS00YjczLTk2ODktNTMyY2NkZmFjNzE1IiwidiI6IjIifQ.MQbg-hNg8oCcTnFfVTI_swbOVk3SF-_mBjuHtmdcwOMBIEFJ3yE5OKW8ZTi3GlUXkl1A8r83cc5pPMgtPlo3Rt1irCn7nL3NrIHVsNOIar5RDhIciyIJ9fTpFbD7RymgJyXSo8dN28CGhKn96LqVx22eoss9vn0pM0o0Z4JYhpxK6rCG3fOfjbirn0RfgfsRROZnV1QTaR1QKhYZ5cH1wNqyOc02A1MLMzERCaWYuYHy5Fk7uyDMtQHgl0QyJjGOfYd5wT0AqK_BG21WU4-h0-9F3Ih-BAW6XzJSbN7g7SmrR0lS_n21GQnmUf16Bmw7vVxysZyFexXKcGwWdS558U_bfm7EZDrpt-vk-2pMcgOBW2WIuXB0xyjsTNOkLu1t4K2JgS4gmyUozAKDiD1y4Fkls0kki-NqXOY36X3XbKFBhlFhj292IOtCSfzDF9vg2awJb1OFvGjAPpFssys6Ul8iir2DP359AKELMl-xzvGhx9XreT-_LEu2a1XCsC8uPNh8gjBXx-H9A4AK0DHd1K_1NsKQp3Ql-rsrN-V0duoG9ypeOpr22uzyooDJ0vNIYEWMibrhJClWMo99rO7rMiRZXjDDdD3asYXP99-oRbc0wIEcqiTAVQYtjvVCUI61bOTKeJfuYdEUndqd4y-U1Pg_8R7EJgRL4XflcHdUIKw",
+    "locationId": "5ej8HwhFeEuUuFyrIeLO",
+    "expiresAt": "2025-07-02T19:57:26.584Z",
+    "createdAt": "2025-07-01T19:57:27.584Z"
+  }
+]
