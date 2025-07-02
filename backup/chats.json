@@ -1,0 +1,1880 @@
+[
+  {
+    "id": "e039da74-36e0-48e4-9fda-1676a294f33e",
+    "chatId": "test-chat-id-5",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "Test New Server",
+    "createdAt": "2025-07-01T11:55:35.396Z"
+  },
+  {
+    "id": "1d924fe3-b1b7-499b-a593-c8ee343cc7ff",
+    "chatId": "46-GBUbHV5amuJrCDMuYwA",
+    "accountId": "65YiMOuISpK5tbDdCzfw_A",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:33.292Z"
+  },
+  {
+    "id": "281c51bd-5e1a-4420-9a7f-b61f9fa97bd4",
+    "chatId": "xzKuEN2MXISmfnQmvC2lWQ",
+    "accountId": "65YiMOuISpK5tbDdCzfw_A",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:33.320Z"
+  },
+  {
+    "id": "7c926181-4acd-4b3b-a1a1-294b9ae00e99",
+    "chatId": "x__bxE7SXx2cJdJWEAQMpQ",
+    "accountId": "65YiMOuISpK5tbDdCzfw_A",
+    "contactName": "Welcome to LinkedIn! 3 important tips to get you started.",
+    "createdAt": "2025-07-01T12:17:33.347Z"
+  },
+  {
+    "id": "ff7ee0f0-48f1-40d6-8112-d4c281d0d2e2",
+    "chatId": "DPYglVukWVK12uYeHsZfdA",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "+447863992555",
+    "createdAt": "2025-07-01T12:17:33.407Z"
+  },
+  {
+    "id": "ac5bd930-a3ca-438c-b464-857a4bda060c",
+    "chatId": "iZwAI6YjWFeC24xcoAtqTw",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "Dubai Real Estate Group ",
+    "createdAt": "2025-07-01T12:17:33.473Z"
+  },
+  {
+    "id": "6aaac560-8598-4110-ac20-b0f212c90e1d",
+    "chatId": "vocKdOqcUBKwGItYj-94Xw",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "Property Group 4️⃣",
+    "createdAt": "2025-07-01T12:17:33.556Z"
+  },
+  {
+    "id": "b23e191b-2007-4c3b-b8e4-97b2f8346864",
+    "chatId": "6gne1oJxW8G9_Lsyyi_dug",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "Property Group 2️⃣",
+    "createdAt": "2025-07-01T12:17:33.657Z"
+  },
+  {
+    "id": "bf217075-2251-4ca7-8649-1f678d092eca",
+    "chatId": "nCH84HFYV8mH4h7Ek01Axg",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "Property Group 1️⃣",
+    "createdAt": "2025-07-01T12:17:33.722Z"
+  },
+  {
+    "id": "eb6618b6-2c63-45f2-9ec6-90624e62b515",
+    "chatId": "G4Ch-DzFW_afQBvBv6oifA",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "Property Group 3️⃣",
+    "createdAt": "2025-07-01T12:17:33.808Z"
+  },
+  {
+    "id": "f7c2c7cc-1edb-460d-b3a9-1fe031e947b1",
+    "chatId": "QI31rM2EXfq9jKQCaSgAwQ",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "AARE GROUP",
+    "createdAt": "2025-07-01T12:17:33.890Z"
+  },
+  {
+    "id": "da37b2f5-0846-4894-8f31-e281724fa2ae",
+    "chatId": "SmB-aZp2U5-xdeSD4R32yw",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "⭕️ THE ONLY PROPERTY GROUP - Boutique Property Brokerage ",
+    "createdAt": "2025-07-01T12:17:33.960Z"
+  },
+  {
+    "id": "9e63d6e4-a361-4a7d-a60b-1ead83d76211",
+    "chatId": "RMu9n_2HVzKGOGW5GX_bjg",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "+447741702303",
+    "createdAt": "2025-07-01T12:17:34.043Z"
+  },
+  {
+    "id": "275a4ebf-1cb2-4edb-876a-2efb14663633",
+    "chatId": "eJPIZpdXUyu1sokWwmasTw",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "⭕️ THE ONLY PROPERTY GROUP - Boutique Property Brokerage ",
+    "createdAt": "2025-07-01T12:17:34.080Z"
+  },
+  {
+    "id": "e1103da2-2d06-4f43-ac66-d289725c553f",
+    "chatId": "69WhuT8-X2mFq2x_VhIYjw",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "Buyer's Comission 💯% Your's",
+    "createdAt": "2025-07-01T12:17:34.112Z"
+  },
+  {
+    "id": "f6fe0a2f-020b-4ab0-a4a7-005209424641",
+    "chatId": "dDVoP9vgXcez_4DvR_-RoQ",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "Quick Rent & Sale Deals DXB",
+    "createdAt": "2025-07-01T12:17:34.140Z"
+  },
+  {
+    "id": "aa23e7bd-5abb-41f8-a49d-7b110e418069",
+    "chatId": "OdwHuElgV26ZQ_UX7_iQNA",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "Distressed Property Group (DPG)",
+    "createdAt": "2025-07-01T12:17:34.201Z"
+  },
+  {
+    "id": "71343a2a-13b9-47d7-9dd1-33fb2f162240",
+    "chatId": "mqU7a-y0UyCVpGx6cEyarQ",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "MEHLAL GROUP 🏠",
+    "createdAt": "2025-07-01T12:17:34.262Z"
+  },
+  {
+    "id": "3077f8f1-358c-4ad7-a07f-192daff3854a",
+    "chatId": "dsuAYEFdUlmAMPxM8fChQg",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "+447510288609",
+    "createdAt": "2025-07-01T12:17:34.424Z"
+  },
+  {
+    "id": "71002a34-364e-4c8c-8c38-7e4049819ee6",
+    "chatId": "cgHZInKYUqy5hMLlHvxTBg",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "+0",
+    "createdAt": "2025-07-01T12:17:34.633Z"
+  },
+  {
+    "id": "49bad53a-02e5-46c1-9d40-f7a11a319159",
+    "chatId": "3xsBH6pIU8aK_pmYkMfwHA",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "CTO Network UK 🇬🇧🇬🇧",
+    "createdAt": "2025-07-01T12:17:34.691Z"
+  },
+  {
+    "id": "a85b4797-fb2a-4ade-9a6b-671504430c6d",
+    "chatId": "o4sKvpdkXIeQj9XOqO8gTw",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "Daily Deals🏠Fontaine Brothers",
+    "createdAt": "2025-07-01T12:17:34.815Z"
+  },
+  {
+    "id": "be9018a6-f5e3-4082-aa3a-be82086046d7",
+    "chatId": "l38oLNhUXsyFFQiBC1H3RA",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "Daily Deals🏠Fontaine Brothers",
+    "createdAt": "2025-07-01T12:17:34.901Z"
+  },
+  {
+    "id": "39afd5cc-194f-4011-83bc-c4f075f97576",
+    "chatId": "XGwWVunbW4yyvgAtTCXtGQ",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "⭕️ R2R Deals 2025 By Mo Nomaan PRIVATE",
+    "createdAt": "2025-07-01T12:17:34.933Z"
+  },
+  {
+    "id": "f50a36cd-a7da-47b8-b8c3-0c0b973d0adb",
+    "chatId": "pvIa_cioUtSh9NXxMq_ayw",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "R2R HUB 2 By Mo 🏠",
+    "createdAt": "2025-07-01T12:17:35.076Z"
+  },
+  {
+    "id": "783a8acb-123d-40db-bd8b-70ac33ea43ab",
+    "chatId": "EFdKGXBBXpKV86kOm5GaUw",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "R2SA CLUB ( Private Member’s Only )",
+    "createdAt": "2025-07-01T12:17:35.175Z"
+  },
+  {
+    "id": "7c20fac2-29fc-43d6-b0e0-0327ac491056",
+    "chatId": "mzrqgx1GX3edCMTaMBQ3Eg",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "PROGRESSIVE TJ LTD DEALS",
+    "createdAt": "2025-07-01T12:17:35.231Z"
+  },
+  {
+    "id": "99810cfd-a132-4de9-9a03-31bc221b1827",
+    "chatId": "jB9gMKuUV4iFjccmdZwHFg",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "PROGRESSIVE TJ LTD DEALS",
+    "createdAt": "2025-07-01T12:17:35.319Z"
+  },
+  {
+    "id": "9c11842a-915f-471a-9d29-ce677eef343b",
+    "chatId": "CUwAMSm6X8i4Z5MPk5yN3g",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "+923491580360",
+    "createdAt": "2025-07-01T12:17:35.722Z"
+  },
+  {
+    "id": "1bf851a5-d98c-41d5-9fbe-0162a4dca245",
+    "chatId": "Z6pzocYlWku5hapSiuR4tA",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "+447740591754",
+    "createdAt": "2025-07-01T12:17:35.980Z"
+  },
+  {
+    "id": "1f403434-1df9-4786-aaba-cf963e8d336b",
+    "chatId": "-sGq0dkeUmGKwp9yMBC0qw",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "05# 14/04 às 20h - Renda Rápida",
+    "createdAt": "2025-07-01T12:17:36.022Z"
+  },
+  {
+    "id": "bfd281e1-bc4b-42fc-a9c6-b29bc8458f74",
+    "chatId": "WKei5e1fV1aWs0pexG_H9g",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "+46739168970",
+    "createdAt": "2025-07-01T12:17:36.178Z"
+  },
+  {
+    "id": "7ddf43e3-d6e6-4314-b3f3-9ca7207be8ef",
+    "chatId": "U-3-y_rFVjO4PxcrPqfjgw",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "Stonebanks Property Deals: Rent-to-Rent, Serviced Accommodation & Below Market Value Opportunities",
+    "createdAt": "2025-07-01T12:17:36.240Z"
+  },
+  {
+    "id": "9f58440f-ef98-4c81-b95a-2bb3f57c00ae",
+    "chatId": "QdEry5zzVCmiUzcbDvZakQ",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "Stonebanks Property Deals: Rent-to-Rent, Serviced Accommodation & Below Market Value Opportunities",
+    "createdAt": "2025-07-01T12:17:36.274Z"
+  },
+  {
+    "id": "97e6bc94-8143-4dfd-85bc-4111e54f0813",
+    "chatId": "3Vb4pgOWWJ2hXFxSIXKhTg",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "The Real Asset",
+    "createdAt": "2025-07-01T12:17:36.376Z"
+  },
+  {
+    "id": "1d0469a3-d66e-40cc-a166-18864c9ec750",
+    "chatId": "X4fHOvB-Uw-1e6-YsUu6fw",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "The Real Asset",
+    "createdAt": "2025-07-01T12:17:36.485Z"
+  },
+  {
+    "id": "46aa3d92-95e6-44f9-a5a4-ccd3c9695bf9",
+    "chatId": "1uTyapzvWKOdpge3XYn4Jg",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "+447882039756",
+    "createdAt": "2025-07-01T12:17:36.520Z"
+  },
+  {
+    "id": "6d7884e6-0d12-4c3a-8c0d-1c6c67f755f4",
+    "chatId": "diEct_LAUYWSHVWR8weE1w",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "+447427544270",
+    "createdAt": "2025-07-01T12:17:36.553Z"
+  },
+  {
+    "id": "26d4fbf1-d57e-42d1-bf49-8b8e3ac004f8",
+    "chatId": "1aIkMRbIUsy2nM_1eEr-ug",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "+447407679095",
+    "createdAt": "2025-07-01T12:17:36.585Z"
+  },
+  {
+    "id": "f003957b-fbfc-4ecd-9a85-a9a3ce9d5482",
+    "chatId": "TtmKzxRhXhuqWG43UaZuVw",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "+447956890572",
+    "createdAt": "2025-07-01T12:17:36.625Z"
+  },
+  {
+    "id": "71862984-6d88-4890-9534-756e1a3b2364",
+    "chatId": "juvy-uHjVZSShmT1BoB2aw",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "+447361599705",
+    "createdAt": "2025-07-01T12:17:36.674Z"
+  },
+  {
+    "id": "e0e56998-987a-4f89-867f-14d7c03c4c9b",
+    "chatId": "LktRjQIiUs2mkCeKgN_h4w",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "Sai Estates",
+    "createdAt": "2025-07-01T12:17:36.742Z"
+  },
+  {
+    "id": "77889d2f-fae9-4b2f-b5de-1fd8a2d9f08b",
+    "chatId": "0PmomfW3UV-5OqBTSwR11w",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "Agencin & Telegram Software",
+    "createdAt": "2025-07-01T12:17:36.857Z"
+  },
+  {
+    "id": "e07a05b7-4dc8-4806-93f8-b0c8a093615f",
+    "chatId": "-ZcSclNLVjSxVre9pbc1OQ",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "+639772358033",
+    "createdAt": "2025-07-01T12:17:37.079Z"
+  },
+  {
+    "id": "d808bac9-d5a7-4dd1-a697-baa578074476",
+    "chatId": "rNhyUHBnXXqVLFDZJEinGQ",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "+923032804125",
+    "createdAt": "2025-07-01T12:17:37.115Z"
+  },
+  {
+    "id": "6e66665a-7cdd-4107-8c14-2b592a46ccad",
+    "chatId": "poKlh2q7V8-iQJ0QlNXg3A",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "Eventa Properties",
+    "createdAt": "2025-07-01T12:17:37.369Z"
+  },
+  {
+    "id": "8b4b6de9-63eb-408e-9e0a-b8576d56eb4d",
+    "chatId": "VQ3nNZjuVVyHMdwxOpywPw",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "+447923236295",
+    "createdAt": "2025-07-01T12:17:37.432Z"
+  },
+  {
+    "id": "c7a50042-633e-4b8b-91bf-2de571f9604b",
+    "chatId": "aCH8y92yXGyxPsDq_saIqA",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "+971521276894",
+    "createdAt": "2025-07-01T12:17:37.472Z"
+  },
+  {
+    "id": "ba973925-ae25-4545-9593-af5aaf7674b1",
+    "chatId": "qLWHo3b4X-K_t9itdatehw",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "+61433275113",
+    "createdAt": "2025-07-01T12:17:37.513Z"
+  },
+  {
+    "id": "d65644a1-6e7b-49c9-a1a8-23b548a7479e",
+    "chatId": "7IRp8yrzVMe3ArCoZdNs4Q",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "Agencin ",
+    "createdAt": "2025-07-01T12:17:37.544Z"
+  },
+  {
+    "id": "8ea56988-5e56-4524-bc1f-f3f68f883bf0",
+    "chatId": "hCKaLaupWOa8NSFdjhpSLQ",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "Agencin ",
+    "createdAt": "2025-07-01T12:17:37.577Z"
+  },
+  {
+    "id": "1d3bc31c-81b2-401f-90e6-96270b29321b",
+    "chatId": "MM11DKnUXHaZqNxg0Ht0nQ",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "Agencin Group",
+    "createdAt": "2025-07-01T12:17:37.612Z"
+  },
+  {
+    "id": "1168b69d-50be-455f-bdc8-a70a87b34a28",
+    "chatId": "iJ3lMG4tVVSdd-sc46Mg-w",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "Property Is Legacy Deals",
+    "createdAt": "2025-07-01T12:17:37.643Z"
+  },
+  {
+    "id": "509152ac-9d18-46e3-bc2a-6ce83fe5265b",
+    "chatId": "9vIGUlFNVKWPS_ZMUlhuaA",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "contactName": "+971508290134",
+    "createdAt": "2025-07-01T12:17:37.713Z"
+  },
+  {
+    "id": "4e654080-3f1c-416f-9855-d44bf2ff4f1e",
+    "chatId": "VEsVaXo9XMudsuyH6xBAAg",
+    "accountId": "8EfuBIO6SQuy4krX8GhffQ",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:37.774Z"
+  },
+  {
+    "id": "5fa53f77-5410-47bf-be50-acf189c0d301",
+    "chatId": "czmMKafhWlecBRp37uwDDA",
+    "accountId": "8EfuBIO6SQuy4krX8GhffQ",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:37.809Z"
+  },
+  {
+    "id": "681c46ff-f6f0-4269-b2ab-7635646d5e1a",
+    "chatId": "hep7Z2-6V3eYzProCFKVlQ",
+    "accountId": "8EfuBIO6SQuy4krX8GhffQ",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:37.842Z"
+  },
+  {
+    "id": "7436c8ef-963f-4b89-bd55-5088ef64013f",
+    "chatId": "SLoWbYu9XJK9omfI828NGw",
+    "accountId": "8EfuBIO6SQuy4krX8GhffQ",
+    "contactName": "Save up to €5,660 on Tuition – Study in Barcelona",
+    "createdAt": "2025-07-01T12:17:37.873Z"
+  },
+  {
+    "id": "563740b9-bad1-4289-983f-dbaec635ae4a",
+    "chatId": "xJV1LLITXyWxi8GbxAuQEw",
+    "accountId": "8EfuBIO6SQuy4krX8GhffQ",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:37.908Z"
+  },
+  {
+    "id": "eff3cf3f-7443-45e6-a663-6213558e31f2",
+    "chatId": "MM4FF75ZVTK39NF5UaM3cA",
+    "accountId": "8EfuBIO6SQuy4krX8GhffQ",
+    "contactName": "Last Chance to Simplify Your Payments with Verto",
+    "createdAt": "2025-07-01T12:17:37.951Z"
+  },
+  {
+    "id": "ff1bae70-25ae-43bf-a236-f9f6aeeed59f",
+    "chatId": "Q-3poHsMUw2Ly0VjUJC99A",
+    "accountId": "8EfuBIO6SQuy4krX8GhffQ",
+    "contactName": "Complete your profile.",
+    "createdAt": "2025-07-01T12:17:37.989Z"
+  },
+  {
+    "id": "e917249b-87d6-47a9-9008-677a421f942d",
+    "chatId": "_UimTpMxW7ikivp93N0WQg",
+    "accountId": "8EfuBIO6SQuy4krX8GhffQ",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:38.023Z"
+  },
+  {
+    "id": "a6713070-fedc-4fe2-8146-177f20e2a908",
+    "chatId": "0-rs4AdcUkm16Ov8buo8kQ",
+    "accountId": "8EfuBIO6SQuy4krX8GhffQ",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:38.066Z"
+  },
+  {
+    "id": "a0befca2-ebf2-4389-b647-b5fe2cd5269d",
+    "chatId": "hgap44D4U1C59LgnMIuiwA",
+    "accountId": "8EfuBIO6SQuy4krX8GhffQ",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:38.100Z"
+  },
+  {
+    "id": "a57432e0-5296-4a10-af2a-f9bebcd253b5",
+    "chatId": "R4D6VCzWVLKzOsMiEByY0A",
+    "accountId": "8EfuBIO6SQuy4krX8GhffQ",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:38.131Z"
+  },
+  {
+    "id": "86ebabd7-db39-40c1-a898-a3c6166d46db",
+    "chatId": "YQld6sRlWT--d5FEByDJmQ",
+    "accountId": "8EfuBIO6SQuy4krX8GhffQ",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:38.167Z"
+  },
+  {
+    "id": "0d861238-94b4-4f96-ad1a-781130a32bf2",
+    "chatId": "FB3al6kJVzCdGmHnlia0sw",
+    "accountId": "8EfuBIO6SQuy4krX8GhffQ",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:38.199Z"
+  },
+  {
+    "id": "ecb70809-a1a5-4ee9-9f9b-528f158beb03",
+    "chatId": "OI7euJTAX7GqQAiDI0UPoA",
+    "accountId": "8EfuBIO6SQuy4krX8GhffQ",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:38.232Z"
+  },
+  {
+    "id": "398d693d-0cb0-4269-8155-c7d2317fa84c",
+    "chatId": "SV9x05lkVZWHFPG8Qw1jXw",
+    "accountId": "8EfuBIO6SQuy4krX8GhffQ",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:38.266Z"
+  },
+  {
+    "id": "2837dc8e-9c02-40e9-8ac1-9c8540cdb27d",
+    "chatId": "49pqSWk2Vu2ms6i_7mtI9Q",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:38.369Z"
+  },
+  {
+    "id": "c5170dc3-c002-4f70-8f00-2f643297ab66",
+    "chatId": "PEYTE7JrXeeEqjw1nnuqtQ",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:38.410Z"
+  },
+  {
+    "id": "86a4b34d-488c-44a2-9278-acdf19e12e51",
+    "chatId": "kGmSCCreVy2ruxKADtvMxQ",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:38.447Z"
+  },
+  {
+    "id": "f4ef7ffc-f820-4382-8c8f-394c9e4faa3c",
+    "chatId": "VF2PJ9zAV5KMzaTN6_J1jA",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:38.473Z"
+  },
+  {
+    "id": "48072807-7a4a-4da6-b2b4-7cde2b1f9864",
+    "chatId": "4hAc4v5_XT6wLy_qESjD-g",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:38.503Z"
+  },
+  {
+    "id": "b12c51ea-d0da-4d35-8f5d-1e3e0cb7b613",
+    "chatId": "0i6Gdr3qWTiDK6zWBZ-vaA",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:38.532Z"
+  },
+  {
+    "id": "f1d3c6bb-73b0-4bec-b458-fd0bdebeb55d",
+    "chatId": "-YWMHwRyUMK1ccIrIt1Pog",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:38.557Z"
+  },
+  {
+    "id": "5c1bc7c9-8b64-4035-8f81-7c2f75f0d5a5",
+    "chatId": "iXw3As0KU1eN3e5TVYrskQ",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:38.586Z"
+  },
+  {
+    "id": "17ba848b-aa5b-47be-a26f-eb4de2c90538",
+    "chatId": "PlIkb_ekUm6qLP8zOxZUDg",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:38.611Z"
+  },
+  {
+    "id": "2f64f1f2-7478-4b4d-9764-5bba0365ef5b",
+    "chatId": "4lCsRSyWXrOd-Ig-huI7Tw",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:38.638Z"
+  },
+  {
+    "id": "aa3a824b-b023-49d1-9255-853786b9cd4e",
+    "chatId": "NE1WATbFU_-fYu4B7LvY3A",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:38.666Z"
+  },
+  {
+    "id": "579108b5-9d11-4a9b-b0b1-6eb5d07423f5",
+    "chatId": "FIMu7B_oVvK34uRdThnlYQ",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:38.696Z"
+  },
+  {
+    "id": "b07e7a7e-0272-4c80-8b53-c4594304ae8b",
+    "chatId": "0xMxhkvuVwqcExXpOaaSXg",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:38.724Z"
+  },
+  {
+    "id": "0af8adcd-29da-4f6b-8dc3-c20ecc4b78a9",
+    "chatId": "NvslMwTFX1y_o6BOdfOhYg",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "My pleasure to connect with you , your majesty ",
+    "createdAt": "2025-07-01T12:17:38.760Z"
+  },
+  {
+    "id": "33b04840-cfdf-4130-9341-b7ff6aa821b0",
+    "chatId": "-MQVa534WjySfMZgqwO4Fw",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:38.790Z"
+  },
+  {
+    "id": "47faff14-5575-4ac8-99cb-8f066dddf241",
+    "chatId": "xMwRlHKjXJmXIpDqxWYcpQ",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:38.821Z"
+  },
+  {
+    "id": "63f94969-0816-4165-8916-6e5c6e10ff47",
+    "chatId": "klbnnQO9UwKvprpD6SqPTQ",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:38.849Z"
+  },
+  {
+    "id": "47f9f03b-ab38-4eb0-8c62-1b57a32bd116",
+    "chatId": "K3ODDBP-VIOxi29x-fu7vA",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:38.885Z"
+  },
+  {
+    "id": "8e0b17fc-0f76-4938-b75d-ae887ba04077",
+    "chatId": "dndVFyHdUMKalmMlkloGHg",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:38.935Z"
+  },
+  {
+    "id": "816bccec-8cf6-4882-80cb-324e42313deb",
+    "chatId": "zwzYidgKUqqI55yBuBKRAA",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:38.968Z"
+  },
+  {
+    "id": "85b53912-e9ea-45fd-849a-b51734d57063",
+    "chatId": "V-qMB9yDWGGA06-z9jRhRQ",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:39.002Z"
+  },
+  {
+    "id": "7becbda3-267b-4ac0-918f-8b8b002ad336",
+    "chatId": "TNjTEkoLUwCZe9lj44IfJg",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:39.034Z"
+  },
+  {
+    "id": "4c92a0c6-2ba5-4454-bbca-49366f3623f9",
+    "chatId": "LDn01kNwUSeVsvOkK9BfGA",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:39.063Z"
+  },
+  {
+    "id": "9192fd2b-021e-49de-8db6-3b8e5769f6b2",
+    "chatId": "4S54la3rVq6Kd-701Bs_KQ",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:39.095Z"
+  },
+  {
+    "id": "ae8511e0-a8a8-42d8-8ce4-66e18f21a304",
+    "chatId": "q5Ww6vqPXRSeh5YoFpKu8g",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:39.121Z"
+  },
+  {
+    "id": "b8349f55-4b99-40d9-b56f-51a8673c3155",
+    "chatId": "eKpQ8qzTWZ-YPvr3UyvxfA",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:39.149Z"
+  },
+  {
+    "id": "0c238bc3-b157-49d8-8a7c-860967a6d03b",
+    "chatId": "R2bkEMfeXDOsVO9QYPhEdA",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:39.180Z"
+  },
+  {
+    "id": "ff059eb9-aa13-4504-8856-9cc832272f96",
+    "chatId": "iHJotX8UVdKMQ8-dMOHAXQ",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:39.212Z"
+  },
+  {
+    "id": "ec6da6b6-9036-4277-b568-017ecf204ae6",
+    "chatId": "b8QypC7jUMySVpAD5X_YNQ",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:39.243Z"
+  },
+  {
+    "id": "16400aff-2e1d-4b0d-bba6-71c7df8fa58c",
+    "chatId": "2jx1Tvt3XQKwc73GmAvUkA",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:39.272Z"
+  },
+  {
+    "id": "268450c4-fe7e-418f-80e6-0dfd3c4a7848",
+    "chatId": "-gacBiHhVGODuGRYj44frw",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:39.304Z"
+  },
+  {
+    "id": "bbf50661-42ff-4c77-acd3-c2fe6bc5bfc3",
+    "chatId": "ReQ0fu5zW1C2bRJ3AywkOg",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:39.336Z"
+  },
+  {
+    "id": "76dc74c8-2fb8-4131-bdcf-71630423787e",
+    "chatId": "E0uvu9UXWYGgTWdNQww9MQ",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:39.366Z"
+  },
+  {
+    "id": "4d590e70-17df-49a4-84b0-21a74dae38ac",
+    "chatId": "3OKIqXMwVmy3KblnIzjJSA",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:39.397Z"
+  },
+  {
+    "id": "72e2d418-b09d-43cb-98bb-53b97a6ea9a4",
+    "chatId": "Ig2M-LndVNmCJHul07HtlQ",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:39.428Z"
+  },
+  {
+    "id": "57f8359c-22cb-4f34-a1cd-980acded8245",
+    "chatId": "85fCX8ZmWV-gQ3_jr0euIA",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:39.456Z"
+  },
+  {
+    "id": "cbe942ce-67fa-4a3e-b088-3b4523575ce7",
+    "chatId": "SY6qf2d6Xr6aQ74_oK9ukA",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:39.486Z"
+  },
+  {
+    "id": "31c8eadf-b5a6-4a04-8cb3-430e74ced4bd",
+    "chatId": "sgD9EBtpUsqOZXOalWppCg",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:39.518Z"
+  },
+  {
+    "id": "c1eb72e6-4c50-433f-a24e-948d6fd70888",
+    "chatId": "UPsBGY7aXP6Ig8fWpUWVew",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:39.549Z"
+  },
+  {
+    "id": "bca82f39-7865-47a4-939a-c4e36966479a",
+    "chatId": "SexQxw0aXfKrX-zptD-tFw",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:39.579Z"
+  },
+  {
+    "id": "887ce741-230d-41de-a7b0-7925d98d0c39",
+    "chatId": "qC7BpS9BUriOdTAT_4VBFw",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "NFsTay.com forest!",
+    "createdAt": "2025-07-01T12:17:39.607Z"
+  },
+  {
+    "id": "24bb5ce8-a88c-424f-a558-a5b60dcf68b6",
+    "chatId": "TnWMEDRqVQe0EHzXnqdw_Q",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:39.635Z"
+  },
+  {
+    "id": "274c6bdf-6742-4607-958d-69abbe87de30",
+    "chatId": "bVVf0kRxVnWCX1rTj5eT3A",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:39.665Z"
+  },
+  {
+    "id": "cdd645fb-d114-4da1-88d4-dbdd3b5b3704",
+    "chatId": "8mUhibv-V12pmFKscxFTsQ",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Reaching Out - Potential Investment Opportunity",
+    "createdAt": "2025-07-01T12:17:39.690Z"
+  },
+  {
+    "id": "2abce327-88c5-4c25-b169-a66b14c49191",
+    "chatId": "nfF5pvOFX2almzdjHud7Bw",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:39.719Z"
+  },
+  {
+    "id": "4b42bc17-b2c4-4d84-a61b-cfd3007ca032",
+    "chatId": "K9dP_5VkWMCxvr4TaDVX5Q",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:39.748Z"
+  },
+  {
+    "id": "46e60d03-917e-4f11-8509-8b5ebd3310c5",
+    "chatId": "8q7Xi1AxWuitr0GJtotStg",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:39.778Z"
+  },
+  {
+    "id": "ef45ee5b-8c4c-4f41-89e2-4baec7eedec2",
+    "chatId": "GGs--u4cW_OXbV3vw1q2ug",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:39.810Z"
+  },
+  {
+    "id": "62ccf144-530c-4095-9bbe-54565a620f4d",
+    "chatId": "MyVKRkhUWZqZe-UlnZKd4Q",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:39.842Z"
+  },
+  {
+    "id": "0833fe24-79ca-4bb7-acc9-9b3b3713a665",
+    "chatId": "O-WQB5xtVsK58KFiHcXXNA",
+    "accountId": "DvcpOmnBQp6ygQotvGc27w",
+    "contactName": "Unknown Contact",
+    "createdAt": "2025-07-01T12:17:39.873Z"
+  },
+  {
+    "id": "4e221a9a-9893-4585-91f4-d50aae75e0ba",
+    "chatId": "fn2G3regXwe5kie85UQY5A",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "+447863992555",
+    "createdAt": "2025-07-01T12:17:39.950Z"
+  },
+  {
+    "id": "30da2249-242c-4741-b0b2-15e2ee788361",
+    "chatId": "_ygh9-_IUYKwuF15-hk_0A",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "Dubai Real Estate Group ",
+    "createdAt": "2025-07-01T12:17:40.023Z"
+  },
+  {
+    "id": "515e6412-3153-4fcc-bc95-e9b5569db579",
+    "chatId": "sPijKlbMXsa3ONuh8Z-9gQ",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "⭕️ THE ONLY PROPERTY GROUP - Boutique Property Brokerage ",
+    "createdAt": "2025-07-01T12:17:40.100Z"
+  },
+  {
+    "id": "9812193a-aff9-4fc2-bbb7-caa0d7dcf1ca",
+    "chatId": "NS6h78qzWyWUOHLNGh07Cw",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "Property Group 4️⃣",
+    "createdAt": "2025-07-01T12:17:40.132Z"
+  },
+  {
+    "id": "39ef69d6-3658-4338-b582-fb9df164494a",
+    "chatId": "8gW_ElItUc-ePOgmOH3VuA",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "Property Group 1️⃣",
+    "createdAt": "2025-07-01T12:17:40.271Z"
+  },
+  {
+    "id": "acbf1846-00c2-4418-aedc-18674fcbe014",
+    "chatId": "hbg6YztMWTOv-JOwrWaV4w",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "+447741702303",
+    "createdAt": "2025-07-01T12:17:40.390Z"
+  },
+  {
+    "id": "8c7bfd40-0bce-4ba8-9093-5199141d86c2",
+    "chatId": "EgXWZ7MoWLCOu2pQxqsfoQ",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "Property Group 2️⃣",
+    "createdAt": "2025-07-01T12:17:40.428Z"
+  },
+  {
+    "id": "1d991898-1531-4e22-892a-8994920dfe6c",
+    "chatId": "YisYxAv4UqWH-iyyWE4Psg",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "Property Group 3️⃣",
+    "createdAt": "2025-07-01T12:17:40.518Z"
+  },
+  {
+    "id": "b8009bcf-d212-497d-bb48-30ddda75d316",
+    "chatId": "Dkjsh9thUvyozug09dPgsA",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "AARE GROUP",
+    "createdAt": "2025-07-01T12:17:40.613Z"
+  },
+  {
+    "id": "8c1e5b0f-4729-47cb-95a6-9b145c08d333",
+    "chatId": "2Pn4RTXcVrqMLysG4Osn-Q",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "⭕️ THE ONLY PROPERTY GROUP - Boutique Property Brokerage ",
+    "createdAt": "2025-07-01T12:17:40.716Z"
+  },
+  {
+    "id": "d925a55f-e1ed-4b2e-bf0f-9abcca729913",
+    "chatId": "0Ic8SE8xWbuyO1j0zUBS7A",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "Buyer's Comission 💯% Your's",
+    "createdAt": "2025-07-01T12:17:40.799Z"
+  },
+  {
+    "id": "a0b3e8ae-ac12-48e1-a375-75bd968432e7",
+    "chatId": "Icj4ZI4VVGqgnukuFv7Bmw",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "Quick Rent & Sale Deals DXB",
+    "createdAt": "2025-07-01T12:17:40.833Z"
+  },
+  {
+    "id": "6a37e7a2-f954-451b-9379-544d7970b4e5",
+    "chatId": "e43pki5SWqiTSdMZM2VSTA",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "Distressed Property Group (DPG)",
+    "createdAt": "2025-07-01T12:17:40.904Z"
+  },
+  {
+    "id": "607790e7-aebd-436f-a6c1-f2cc260b1c74",
+    "chatId": "nKSZ4tCVWNu2_DqGtOrm4w",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "MEHLAL GROUP 🏠",
+    "createdAt": "2025-07-01T12:17:40.997Z"
+  },
+  {
+    "id": "bda21d68-b6fa-4d13-b08c-03fe5d6ce7a8",
+    "chatId": "BAyBD-OxXN-ykxmoC97GBg",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "+447510288609",
+    "createdAt": "2025-07-01T12:17:41.085Z"
+  },
+  {
+    "id": "876aaeed-8845-43c3-8b12-a5c94bfe6172",
+    "chatId": "q6z-cyChUf2ToU4CjqbsuQ",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "+0",
+    "createdAt": "2025-07-01T12:17:41.161Z"
+  },
+  {
+    "id": "916e05d3-cb71-4b24-8c8c-340f0f3d2fc8",
+    "chatId": "9sf8q2qVU3qXJkfXUnXVzQ",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "CTO Network UK 🇬🇧🇬🇧",
+    "createdAt": "2025-07-01T12:17:41.218Z"
+  },
+  {
+    "id": "04d2e864-e7f7-4a79-816a-8ffbac54a965",
+    "chatId": "_2DtHuVVViOHZlaR3EoKmg",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "Daily Deals🏠Fontaine Brothers",
+    "createdAt": "2025-07-01T12:17:41.293Z"
+  },
+  {
+    "id": "dd4d98c3-c0f7-47a7-a20b-9f405e8492f5",
+    "chatId": "lftF_BqFWaalAmQprLRx-w",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "Daily Deals🏠Fontaine Brothers",
+    "createdAt": "2025-07-01T12:17:41.323Z"
+  },
+  {
+    "id": "1514af6a-2c37-4acc-bb18-3aaccb370cb6",
+    "chatId": "DaEe1P23VLCNNvdd0lQqXw",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "⭕️ R2R Deals 2025 By Mo Nomaan PRIVATE",
+    "createdAt": "2025-07-01T12:17:41.407Z"
+  },
+  {
+    "id": "65ea4080-f271-4bb5-86af-f611053137e8",
+    "chatId": "-fsKf0epXoWO4Xu6tRN1sw",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "R2R HUB 2 By Mo 🏠",
+    "createdAt": "2025-07-01T12:17:41.477Z"
+  },
+  {
+    "id": "0449d40b-ecec-48cc-9e53-8957d04852fb",
+    "chatId": "GjxoTXTMXsyoeqT_bevevw",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "R2SA CLUB ( Private Member’s Only )",
+    "createdAt": "2025-07-01T12:17:41.552Z"
+  },
+  {
+    "id": "de4268ec-4767-494d-941e-c8e483e136e1",
+    "chatId": "SOiMFkOWUtiijH0DH-TNKg",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "PROGRESSIVE TJ LTD DEALS",
+    "createdAt": "2025-07-01T12:17:41.642Z"
+  },
+  {
+    "id": "d44cc06f-afc8-46cd-b148-a7f4e178d3ee",
+    "chatId": "JfeTDuiuVmSij7Sydsq9pQ",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "PROGRESSIVE TJ LTD DEALS",
+    "createdAt": "2025-07-01T12:17:41.676Z"
+  },
+  {
+    "id": "16050017-f23a-4704-a872-5bba042c2bdd",
+    "chatId": "8Lgm-DYVXHKJR-vzzuLM_w",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "+923491580360",
+    "createdAt": "2025-07-01T12:17:41.742Z"
+  },
+  {
+    "id": "9fcfca43-639a-42ca-9da7-135075c72ff4",
+    "chatId": "ED0aeVOAUtymQTGZF85Vew",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "+447740591754",
+    "createdAt": "2025-07-01T12:17:41.824Z"
+  },
+  {
+    "id": "10f13cb3-c3d5-4e73-a91c-61ea0ee6ec6a",
+    "chatId": "-UjCQc7vWNeRHLzDCF2xQw",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "05# 14/04 às 20h - Renda Rápida",
+    "createdAt": "2025-07-01T12:17:41.860Z"
+  },
+  {
+    "id": "bcabc003-860e-43cb-84ca-c06dcddddf6a",
+    "chatId": "RQKbx7JiWHmYqKuKo3hyFA",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "+46739168970",
+    "createdAt": "2025-07-01T12:17:42.011Z"
+  },
+  {
+    "id": "47ac07d8-35bd-4854-acc1-7eaba2b006c1",
+    "chatId": "dzhRp6SnVbucUC4VngJnuQ",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "Stonebanks Property Deals: Rent-to-Rent, Serviced Accommodation & Below Market Value Opportunities",
+    "createdAt": "2025-07-01T12:17:42.098Z"
+  },
+  {
+    "id": "bca2109e-6995-4b65-8069-79151407aa24",
+    "chatId": "cyHGIcQ4UqmMxXK9hYMV0w",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "Stonebanks Property Deals: Rent-to-Rent, Serviced Accommodation & Below Market Value Opportunities",
+    "createdAt": "2025-07-01T12:17:42.139Z"
+  },
+  {
+    "id": "4c9ee1ce-6d69-49e4-a07b-f9dc79cb8d90",
+    "chatId": "zc7Kbw5kXq-Aoq7CnmGj0w",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "The Real Asset",
+    "createdAt": "2025-07-01T12:17:42.252Z"
+  },
+  {
+    "id": "5f6c8028-cff7-40f0-a3a7-00b7d6573028",
+    "chatId": "iVRu5OBdX-2XcW0VT5nk2A",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "The Real Asset",
+    "createdAt": "2025-07-01T12:17:42.289Z"
+  },
+  {
+    "id": "a3feae1e-89f0-492c-9378-7b145e905dd0",
+    "chatId": "q5ot2P__VRWboCfXFeVIxQ",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "+447882039756",
+    "createdAt": "2025-07-01T12:17:42.416Z"
+  },
+  {
+    "id": "24d24df9-cb39-478f-96e9-608451751058",
+    "chatId": "1VVPYGvkWj2I3rh7LynbJQ",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "+447427544270",
+    "createdAt": "2025-07-01T12:17:42.447Z"
+  },
+  {
+    "id": "2c3a13e8-fa2a-4ef9-b630-c69306a8daf5",
+    "chatId": "uONozvaUV366kYGXZb1DOw",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "+447407679095",
+    "createdAt": "2025-07-01T12:17:42.476Z"
+  },
+  {
+    "id": "04f62a7f-6481-4190-af3e-53f6c2d035bc",
+    "chatId": "tKzew3QrX5yNBtHoEBkuTQ",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "+447956890572",
+    "createdAt": "2025-07-01T12:17:42.510Z"
+  },
+  {
+    "id": "00346020-afb1-48ec-bbf6-f5f34cd7f21c",
+    "chatId": "fnwlMUWYW4yX5FGhkvay9w",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "+447361599705",
+    "createdAt": "2025-07-01T12:17:42.554Z"
+  },
+  {
+    "id": "6ad20c06-e6b5-49a9-b51d-ce1c8de3b5e5",
+    "chatId": "AJwqMMG-Xq2GGgseip7giw",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "Sai Estates",
+    "createdAt": "2025-07-01T12:17:42.618Z"
+  },
+  {
+    "id": "2dd129d0-7dfe-4ebd-a8ed-e262329f8d83",
+    "chatId": "HY2-SZl-XUiskaALZp_I3Q",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "Agencin & Telegram Software",
+    "createdAt": "2025-07-01T12:17:42.694Z"
+  },
+  {
+    "id": "c2f2529b-8d95-4e4c-ac6b-946719a9218e",
+    "chatId": "xZWFyfgAW4OtNgIq6Wzw4w",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "+639772358033",
+    "createdAt": "2025-07-01T12:17:42.758Z"
+  },
+  {
+    "id": "6d366971-df98-40b6-a392-7f41196d8bb3",
+    "chatId": "TQNANoQ4XaWKJxgZHXJnkQ",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "+923032804125",
+    "createdAt": "2025-07-01T12:17:42.793Z"
+  },
+  {
+    "id": "9432b84a-30c8-439b-8658-87f4666a9a5f",
+    "chatId": "Q0NVZR_QUsCbRtLocXFZ0A",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "Eventa Properties",
+    "createdAt": "2025-07-01T12:17:42.855Z"
+  },
+  {
+    "id": "04e1a737-b4c4-413e-b936-5021f252e81a",
+    "chatId": "J3hl-eWtVWeeC0F9KQoNmA",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "+447923236295",
+    "createdAt": "2025-07-01T12:17:42.909Z"
+  },
+  {
+    "id": "ba50ce67-3529-4c0b-b65a-8d3ef6af075a",
+    "chatId": "an4E-aTWUcWvj-nD6mZkWA",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "+971521276894",
+    "createdAt": "2025-07-01T12:17:42.952Z"
+  },
+  {
+    "id": "32213794-619e-4d85-a29d-fc27590404c3",
+    "chatId": "AXp02YQ9WomN8sMlLvPZsA",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "+61433275113",
+    "createdAt": "2025-07-01T12:17:43.007Z"
+  },
+  {
+    "id": "86576038-0c22-45c8-ace2-33fc2abee3a5",
+    "chatId": "Ruwxlve5UCm9LEstUuzlTQ",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "Agencin ",
+    "createdAt": "2025-07-01T12:17:43.043Z"
+  },
+  {
+    "id": "d208a605-1c21-4e9b-a466-8b3c1ba99681",
+    "chatId": "OdH_x7irW2-XKYCLuJ4N5g",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "Agencin ",
+    "createdAt": "2025-07-01T12:17:43.077Z"
+  },
+  {
+    "id": "d74d4db1-6373-41b4-9af7-e6df343f8ef3",
+    "chatId": "_kOI2gcRXr6ewT5pmX2Ihg",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "Agencin Group",
+    "createdAt": "2025-07-01T12:17:43.117Z"
+  },
+  {
+    "id": "c7e4a7bf-f72b-4e51-b27a-879414b28872",
+    "chatId": "dsoTFKnIWpuv90swakqmdA",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "Property Is Legacy Deals",
+    "createdAt": "2025-07-01T12:17:43.152Z"
+  },
+  {
+    "id": "d2410ca7-261a-448a-a5a3-d98b37e9434f",
+    "chatId": "caMaYL_QV2ORHPWcLNzsCA",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "+971508290134",
+    "createdAt": "2025-07-01T12:17:43.240Z"
+  },
+  {
+    "id": "1ddcfc69-3fb5-4c93-94dc-1c1b4d44d7dd",
+    "chatId": "test-chat-123",
+    "accountId": "vqsXOwd9SGOSTs5GgJuhVw",
+    "contactName": "+447863992303",
+    "createdAt": "2025-07-01T17:15:57.259Z"
+  },
+  {
+    "id": "chat-447863992555",
+    "chatId": "chat-447863992555",
+    "contactName": "+447863992555",
+    "accountId": "6EeLOpVOTEmFNiaTyIt1HQ",
+    "lastMessage": "helo",
+    "lastMessageTime": "2025-07-01T21:28:50.446Z"
+  },
+  {
+    "id": "5209038f-2ad4-480c-940f-a30af9138aad",
+    "chatId": "Mtb3zY8xUFSwd7y75ZEE5Q",
+    "accountId": "W2r2hmOvSJ2tBUPQcjzp2w",
+    "contactName": "Dubai Real Estate Group ",
+    "contactPhone": "",
+    "lastMessage": "",
+    "lastMessageTime": "2025-07-02T07:21:14.000Z",
+    "createdAt": "2025-07-02T06:20:12.105Z",
+    "isGroup": true
+  },
+  {
+    "id": "d7b8dbb6-ba9e-42ab-84ef-68893e8aaa48",
+    "chatId": "rQms__VjU4WRpa1qIq5Kew",
+    "accountId": "W2r2hmOvSJ2tBUPQcjzp2w",
+    "contactName": "Property Group 3️⃣",
+    "contactPhone": "",
+    "lastMessage": "",
+    "lastMessageTime": "2025-07-02T06:20:12.356Z",
+    "createdAt": "2025-07-02T06:20:12.356Z",
+    "isGroup": true
+  },
+  {
+    "id": "a7d23c05-3ce4-4c65-b1ab-ab78beebee2a",
+    "chatId": "ECYh6rzeU-avMHk-ElgkHw",
+    "accountId": "W2r2hmOvSJ2tBUPQcjzp2w",
+    "contactName": "⭕️ THE ONLY PROPERTY GROUP - Boutique Property Brokerage ",
+    "contactPhone": "",
+    "lastMessage": "",
+    "lastMessageTime": "2025-07-02T06:20:12.500Z",
+    "createdAt": "2025-07-02T06:20:12.500Z",
+    "isGroup": true
+  },
+  {
+    "id": "716282be-9793-4ece-ac8c-e066e88e71f3",
+    "chatId": "4PXNZC2AUR2EDS8u7VTDQQ",
+    "accountId": "W2r2hmOvSJ2tBUPQcjzp2w",
+    "contactName": "Property Group 2️⃣",
+    "contactPhone": "",
+    "lastMessage": "",
+    "lastMessageTime": "2025-07-02T06:20:12.634Z",
+    "createdAt": "2025-07-02T06:20:12.634Z",
+    "isGroup": true
+  },
+  {
+    "id": "2f957d27-e108-45d8-8c83-e0043440b5da",
+    "chatId": "15cySryLV4m8XF7CBWBBAA",
+    "accountId": "W2r2hmOvSJ2tBUPQcjzp2w",
+    "contactName": "Property Group 1️⃣",
+    "contactPhone": "",
+    "lastMessage": "",
+    "lastMessageTime": "2025-07-02T07:23:19.000Z",
+    "createdAt": "2025-07-02T06:20:12.794Z",
+    "isGroup": true
+  },
+  {
+    "id": "8030c786-9848-48d0-b132-185f31410eaa",
+    "chatId": "KkLnweKuXpmPVLhQXuwCfQ",
+    "accountId": "W2r2hmOvSJ2tBUPQcjzp2w",
+    "contactName": "Property Group 4️⃣",
+    "contactPhone": "",
+    "lastMessage": "",
+    "lastMessageTime": "2025-07-02T07:23:27.000Z",
+    "createdAt": "2025-07-02T06:20:12.955Z",
+    "isGroup": true
+  },
+  {
+    "id": "2d4454c1-fcae-4682-8a55-c5bd332dac44",
+    "chatId": "gBzZ9-KKVOef2iNjfwJa6Q",
+    "accountId": "W2r2hmOvSJ2tBUPQcjzp2w",
+    "contactName": "447863992555",
+    "contactPhone": "447863992555",
+    "lastMessage": "",
+    "lastMessageTime": "2025-07-02T06:42:40.000Z",
+    "createdAt": "2025-07-02T06:20:13.121Z",
+    "isGroup": false
+  },
+  {
+    "id": "974b6800-c329-45d6-a17b-8fc7d88cbee5",
+    "chatId": "0m68IuESX1KEPlA-OAGZeg",
+    "accountId": "W2r2hmOvSJ2tBUPQcjzp2w",
+    "contactName": "447741702303",
+    "contactPhone": "447741702303",
+    "lastMessage": "",
+    "lastMessageTime": "2025-07-02T06:20:13.263Z",
+    "createdAt": "2025-07-02T06:20:13.263Z",
+    "isGroup": false
+  },
+  {
+    "id": "4ddc5b6f-36b8-452a-b5ec-a9784cab53d7",
+    "chatId": "XqBMzGP1VS62VGz4rje5uw",
+    "accountId": "W2r2hmOvSJ2tBUPQcjzp2w",
+    "contactName": "AARE GROUP",
+    "contactPhone": "",
+    "lastMessage": "",
+    "lastMessageTime": "2025-07-02T06:20:13.410Z",
+    "createdAt": "2025-07-02T06:20:13.410Z",
+    "isGroup": true
+  },
+  {
+    "id": "a9ad5cc9-b979-4b30-bccc-860a11cd8e26",
+    "chatId": "DFR6i0-RUGazg-HeCw5RSA",
+    "accountId": "W2r2hmOvSJ2tBUPQcjzp2w",
+    "contactName": "Sai Estates",
+    "contactPhone": "",
+    "lastMessage": "",
+    "lastMessageTime": "2025-07-02T06:20:13.642Z",
+    "createdAt": "2025-07-02T06:20:13.642Z",
+    "isGroup": true
+  },
+  {
+    "id": "7ba17b37-6a02-4165-a225-1eb00eb40826",
+    "chatId": "KkbG2Ew7WjKIuDw3KuTKCQ",
+    "accountId": "W2r2hmOvSJ2tBUPQcjzp2w",
+    "contactName": "R2R HUB 2 By Mo 🏠",
+    "contactPhone": "",
+    "lastMessage": "",
+    "lastMessageTime": "2025-07-02T06:20:13.801Z",
+    "createdAt": "2025-07-02T06:20:13.801Z",
+    "isGroup": true
+  },
+  {
+    "id": "20c1f438-294c-4414-980b-eb47dd98b2fc",
+    "chatId": "nrNOIt97V4avkl2E53euJA",
+    "accountId": "W2r2hmOvSJ2tBUPQcjzp2w",
+    "contactName": "⭕️ THE ONLY PROPERTY GROUP - Boutique Property Brokerage ",
+    "contactPhone": "",
+    "lastMessage": "",
+    "lastMessageTime": "2025-07-02T06:20:13.951Z",
+    "createdAt": "2025-07-02T06:20:13.951Z",
+    "isGroup": true
+  },
+  {
+    "id": "2e5ccd76-4192-4f89-85fd-32c692a7746b",
+    "chatId": "7_TAVlCOW5u24Z7XA3GwLQ",
+    "accountId": "W2r2hmOvSJ2tBUPQcjzp2w",
+    "contactName": "⭕️ R2R Deals 2025 By Mo Nomaan PRIVATE",
+    "contactPhone": "",
+    "lastMessage": "",
+    "lastMessageTime": "2025-07-02T06:20:14.120Z",
+    "createdAt": "2025-07-02T06:20:14.120Z",
+    "isGroup": true
+  },
+  {
+    "id": "f0a32f56-80b7-43b9-93e1-c6dad05e1ae6",
+    "chatId": "Cy943c06VIWwUQwgUqU7_w",
+    "accountId": "W2r2hmOvSJ2tBUPQcjzp2w",
+    "contactName": "MEHLAL GROUP 🏠",
+    "contactPhone": "",
+    "lastMessage": "",
+    "lastMessageTime": "2025-07-02T06:20:14.287Z",
+    "createdAt": "2025-07-02T06:20:14.287Z",
+    "isGroup": true
+  },
+  {
+    "id": "899f1b5a-6d16-4d85-aa67-8bae92fe4ef6",
+    "chatId": "vbnVpdrmXzCDgajthm5yFQ",
+    "accountId": "W2r2hmOvSJ2tBUPQcjzp2w",
+    "contactName": "Buyer's Comission 💯% Your's",
+    "contactPhone": "",
+    "lastMessage": "",
+    "lastMessageTime": "2025-07-02T06:20:14.443Z",
+    "createdAt": "2025-07-02T06:20:14.443Z",
+    "isGroup": true
+  },
+  {
+    "id": "e31d8a5e-95a2-4b43-ac5a-ef4a1c4fed49",
+    "chatId": "nsn0WnNXW1iDObxGzrXeCw",
+    "accountId": "W2r2hmOvSJ2tBUPQcjzp2w",
+    "contactName": "Quick Rent & Sale Deals DXB",
+    "contactPhone": "",
+    "lastMessage": "",
+    "lastMessageTime": "2025-07-02T06:27:43.000Z",
+    "createdAt": "2025-07-02T06:20:14.573Z",
+    "isGroup": true
+  },
+  {
+    "id": "69203790-b3c2-4fea-864a-46e2aab14735",
+    "chatId": "xnDcqEsnUsqvm51QrGo5dQ",
+    "accountId": "W2r2hmOvSJ2tBUPQcjzp2w",
+    "contactName": "The Real Asset",
+    "contactPhone": "",
+    "lastMessage": "",
+    "lastMessageTime": "2025-07-02T06:20:14.718Z",
+    "createdAt": "2025-07-02T06:20:14.718Z",
+    "isGroup": true
+  },
+  {
+    "id": "8a741720-f3e5-4b89-a076-d095b8a45d66",
+    "chatId": "d6cY8K8IUqW7M91hBeVvKA",
+    "accountId": "W2r2hmOvSJ2tBUPQcjzp2w",
+    "contactName": "The Real Asset",
+    "contactPhone": "",
+    "lastMessage": "",
+    "lastMessageTime": "2025-07-02T06:20:14.854Z",
+    "createdAt": "2025-07-02T06:20:14.854Z",
+    "isGroup": true
+  },
+  {
+    "id": "43b10d40-0a4b-4649-812e-91d1e2d7681e",
+    "chatId": "Ljb-TRzPVpqCIHk6gMgVVg",
+    "accountId": "W2r2hmOvSJ2tBUPQcjzp2w",
+    "contactName": "Distressed Property Group (DPG)",
+    "contactPhone": "",
+    "lastMessage": "",
+    "lastMessageTime": "2025-07-02T06:20:15.004Z",
+    "createdAt": "2025-07-02T06:20:15.004Z",
+    "isGroup": true
+  },
+  {
+    "id": "66f14b8d-8d6e-4800-81da-54e2b48a0067",
+    "chatId": "6PvfI0YUXQ2tr6lR-aZigA",
+    "accountId": "W2r2hmOvSJ2tBUPQcjzp2w",
+    "contactName": "447510288609",
+    "contactPhone": "447510288609",
+    "lastMessage": "",
+    "lastMessageTime": "2025-07-02T06:20:15.164Z",
+    "createdAt": "2025-07-02T06:20:15.164Z",
+    "isGroup": false
+  },
+  {
+    "id": "1c220d53-26f2-4445-8f28-e5c3170ab315",
+    "chatId": "BRutPmUYWkOeL3_j-d9Xjw",
+    "accountId": "9Kq65oPbTjaFLXCTWVNGsA",
+    "contactName": "Dubai Real Estate Group ",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:10:24.881Z",
+    "lastMessageTime": "2025-07-02T15:38:58.000Z"
+  },
+  {
+    "id": "9bb5fbea-60e5-401c-84a2-1fc00462e527",
+    "chatId": "AYuTHEk6VcuNrqODhOvm1Q",
+    "accountId": "9Kq65oPbTjaFLXCTWVNGsA",
+    "contactName": "447863992555",
+    "contactPhone": "447863992555",
+    "isGroup": false,
+    "createdAt": "2025-07-02T15:10:24.882Z",
+    "lastMessageTime": "2025-07-02T15:48:30.000Z"
+  },
+  {
+    "id": "33bdfb14-ee1e-4898-bbed-60dd920b46c6",
+    "chatId": "bh_310y8VzyY4giFpt_K9Q",
+    "accountId": "9Kq65oPbTjaFLXCTWVNGsA",
+    "contactName": "Property Group 1️⃣",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:10:24.882Z",
+    "lastMessageTime": "2025-07-02T13:12:06.000Z"
+  },
+  {
+    "id": "69108bc6-2bba-44c7-b6b7-c37185374ead",
+    "chatId": "KVW7UWZ7UAq_hBIoUVs_Fg",
+    "accountId": "9Kq65oPbTjaFLXCTWVNGsA",
+    "contactName": "Property Group 4️⃣",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:10:24.882Z",
+    "lastMessageTime": "2025-07-02T13:03:42.000Z"
+  },
+  {
+    "id": "d3753719-3f5d-4835-b20d-adf5fda371d7",
+    "chatId": "8B1QCLT0VKG41RWjUS9RNw",
+    "accountId": "9Kq65oPbTjaFLXCTWVNGsA",
+    "contactName": "Property Group 3️⃣",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:10:24.882Z",
+    "lastMessageTime": "2025-07-02T13:03:23.000Z"
+  },
+  {
+    "id": "7c32aa92-ba9b-4503-ae5d-638d38215c29",
+    "chatId": "DOQ6kE6yW-GRryTSGfsbqQ",
+    "accountId": "9Kq65oPbTjaFLXCTWVNGsA",
+    "contactName": "Property Group 2️⃣",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:10:24.882Z",
+    "lastMessageTime": "2025-07-02T13:52:18.000Z"
+  },
+  {
+    "id": "d59b012d-8cad-41f7-ab24-9746281ce218",
+    "chatId": "kJUxpkGeU0WL1hFNj5G_3A",
+    "accountId": "9Kq65oPbTjaFLXCTWVNGsA",
+    "contactName": "AARE GROUP",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:10:24.882Z",
+    "lastMessageTime": "2025-07-02T15:39:10.000Z"
+  },
+  {
+    "id": "597f57aa-2f07-4f68-8b11-cebba4cce12c",
+    "chatId": "sIiZMnBLUDGLEoiqYP0Cqg",
+    "accountId": "9Kq65oPbTjaFLXCTWVNGsA",
+    "contactName": "⭕️ THE ONLY PROPERTY GROUP - Boutique Property Brokerage ",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:10:24.882Z",
+    "lastMessageTime": "2023-10-20T23:11:58.000Z"
+  },
+  {
+    "id": "27cb3d3c-0c31-43e5-9a18-86f0e79802dd",
+    "chatId": "s2Y6-83zVZCJoWQ3E9tngg",
+    "accountId": "9Kq65oPbTjaFLXCTWVNGsA",
+    "contactName": "447741702303",
+    "contactPhone": "447741702303",
+    "isGroup": false,
+    "createdAt": "2025-07-02T15:10:24.882Z",
+    "lastMessageTime": "2025-06-26T06:08:19.000Z"
+  },
+  {
+    "id": "af5acbb7-46c9-4f67-95f5-8548bdb70cb9",
+    "chatId": "jbrd9svrUHefEIaMMv089g",
+    "accountId": "9Kq65oPbTjaFLXCTWVNGsA",
+    "contactName": "Buyer's Comission 💯% Your's",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:10:24.882Z",
+    "lastMessageTime": "2024-12-18T07:29:36.000Z"
+  },
+  {
+    "id": "63b4cd56-d9bf-441e-a645-200d47d16c3f",
+    "chatId": "apaCTBrdX160vKb6xzbj9Q",
+    "accountId": "9Kq65oPbTjaFLXCTWVNGsA",
+    "contactName": "Quick Rent & Sale Deals DXB",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:10:24.882Z",
+    "lastMessageTime": "2025-07-02T09:34:56.000Z"
+  },
+  {
+    "id": "5c6392e8-3f49-4d69-9ad7-042cf12d6038",
+    "chatId": "xhqJNbgdVai10Qq7tPVnsA",
+    "accountId": "9Kq65oPbTjaFLXCTWVNGsA",
+    "contactName": "⭕️ R2R Deals 2025 By Mo Nomaan PRIVATE",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:10:24.882Z",
+    "lastMessageTime": "2025-07-01T13:57:00.000Z"
+  },
+  {
+    "id": "b9d5bd4e-b30b-40fa-bb2e-e23544ee485f",
+    "chatId": "wtY1NO25UJKHeHmM2w0wtw",
+    "accountId": "9Kq65oPbTjaFLXCTWVNGsA",
+    "contactName": "🚨 Stonebanks Property Vault 🚨 R2R | SA | HMO | BMV 💸 Hidden Deals. Massive Cashflow. No BS. 🔥",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:14:48.020Z",
+    "lastMessageTime": "2025-07-02T15:42:55.000Z"
+  },
+  {
+    "id": "fdb2bc4c-8a17-446a-88e8-ff130dddb4e9",
+    "chatId": "nuIMX-g9VlWFAvbMaHzpEA",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "🔴MASTER GAROTA BRASILEIRA UK 1",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:51:28.140Z",
+    "lastMessageTime": "2025-07-02T16:15:52.000Z"
+  },
+  {
+    "id": "91a8e0b3-2ca4-4973-8c73-a29474885d83",
+    "chatId": "2SUWgxD2XZ-n0XIaSueCrQ",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "🔴MASTER LANDLORD & INDEPENDENT 2",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:51:28.140Z",
+    "lastMessageTime": "2025-07-02T15:51:28.140Z"
+  },
+  {
+    "id": "bf1a7d11-4fbe-4b22-b3da-fb548fe59a27",
+    "chatId": "A8V8QeMxVFqirnCML_W2sg",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "🔴MASTER INDEPENDENTE UK 2",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:51:28.140Z",
+    "lastMessageTime": "2025-07-02T12:07:35.000Z"
+  },
+  {
+    "id": "b84f080b-af82-4b7f-a7bd-82a4b8029a38",
+    "chatId": "QfYW5ENRVh2L9s72v8rsDQ",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "🔴MASTER BRASILEIRAS EM UK 2",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:51:28.140Z",
+    "lastMessageTime": "2025-07-02T12:08:05.000Z"
+  },
+  {
+    "id": "9f2ed151-50bd-40e7-a139-350e722ce841",
+    "chatId": "5zr5pstmX4WvpnW965ALdw",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "447741702303",
+    "contactPhone": "447741702303",
+    "isGroup": false,
+    "createdAt": "2025-07-02T15:51:28.140Z",
+    "lastMessageTime": "2025-07-02T15:52:23.000Z"
+  },
+  {
+    "id": "b77e7054-274d-4167-b46f-0249c11d8417",
+    "chatId": "OoISwaXPWZCi2QFtPYJBGg",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "🇧🇷+44🇬🇧ORDER AND PROGRESS LONDON  🇬🇧",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:51:28.140Z",
+    "lastMessageTime": "2025-07-02T14:45:58.000Z"
+  },
+  {
+    "id": "334a44b1-6ff7-46d9-9aed-b388a7cc3e30",
+    "chatId": "jEEPKfH5VRi6giDE8TZSVw",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "Brasileiros em Liverpool",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:51:28.141Z",
+    "lastMessageTime": "2025-07-02T15:30:05.000Z"
+  },
+  {
+    "id": "6ebfd396-2d92-4810-9b2b-2c23cb57e235",
+    "chatId": "he4QoxyUVWm_RbjKigDyMQ",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "Liverpool 🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:51:28.141Z",
+    "lastMessageTime": "2025-07-02T15:30:11.000Z"
+  },
+  {
+    "id": "08c9fce2-501b-4c49-9680-75bd5e37a1ff",
+    "chatId": "7GHa7HsXXvSA70GSBjb6lg",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "🇧🇷DIVULGANDO🇵🇹",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:51:28.141Z",
+    "lastMessageTime": "2025-07-02T16:15:31.000Z"
+  },
+  {
+    "id": "798f809f-9564-4fd4-89b0-c1c57b1ecffb",
+    "chatId": "hF3sxcXeXJyXyeZVWKIIUg",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "Property Group 5️⃣",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:51:28.141Z",
+    "lastMessageTime": "2025-07-02T16:16:21.000Z"
+  },
+  {
+    "id": "99917d32-c8c4-4ce9-8fae-879183db6b8b",
+    "chatId": "bIc_wwrBXUy2W0D_oRglXg",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "Big Money Property Network",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:51:28.141Z",
+    "lastMessageTime": "2025-07-02T15:55:18.000Z"
+  },
+  {
+    "id": "7da76120-a864-44e4-a861-c368e3ccba00",
+    "chatId": "ZhqvFAkTUmmIDsHiCRyTaQ",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "UK Property Deals 🏡🏚🏗",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:51:28.141Z",
+    "lastMessageTime": "2025-07-01T16:05:51.000Z"
+  },
+  {
+    "id": "60687b7e-551c-46fd-83d1-5f515a477428",
+    "chatId": "l3G5E20pXaqUUb_rnPB5kw",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "SOS Liverpool 🇬🇧 🆘",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:51:28.141Z",
+    "lastMessageTime": "2025-07-02T16:11:11.000Z"
+  },
+  {
+    "id": "645e0796-64d1-493e-8e9e-e04502bb9a77",
+    "chatId": "nqX-vxpBVOWBo-zGxUsmBw",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "Property Group 4️⃣",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:51:28.141Z",
+    "lastMessageTime": "2025-07-02T15:54:01.000Z"
+  },
+  {
+    "id": "d339e1b9-4573-4cef-a68f-38dc3f6f157f",
+    "chatId": "DawL-inoXS2dAE72fX2JcA",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "Property Group 1️⃣",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:51:28.142Z",
+    "lastMessageTime": "2025-06-27T18:09:08.000Z"
+  },
+  {
+    "id": "4e9a59fa-fb21-4521-9a9a-78f6813f102e",
+    "chatId": "E7u_Rfz0UbaFZjHaWTr8aw",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "Classificados",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:51:28.142Z",
+    "lastMessageTime": "2025-07-02T06:49:59.000Z"
+  },
+  {
+    "id": "3a9ae3aa-09d7-4255-ab64-374571a671b5",
+    "chatId": "lEaTTioEXf6tIhAuSQm1Uw",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "Deals - P.E Group",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:51:28.142Z",
+    "lastMessageTime": "2025-07-01T21:41:58.000Z"
+  },
+  {
+    "id": "ee1837f1-2f32-4baf-933b-4df28c5446d1",
+    "chatId": "lgDZVWDBUYmcfcHSUAkOuA",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "Property Group 3️⃣",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:51:28.142Z",
+    "lastMessageTime": "2025-07-02T13:12:07.000Z"
+  },
+  {
+    "id": "8880b941-c8f0-4701-a62d-a391b66e22ab",
+    "chatId": "FhYK4MjpUxKNV8nASUNkSg",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "Property Group 2️⃣",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:51:28.142Z",
+    "lastMessageTime": "2025-07-02T14:45:27.000Z"
+  },
+  {
+    "id": "440e8394-867c-41a1-a040-887bdc8316b5",
+    "chatId": "KmuYnrfRWIKtzoLNOaeIyA",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "All Strategies UK🏘",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:51:28.142Z",
+    "lastMessageTime": "2025-02-24T01:28:01.000Z"
+  },
+  {
+    "id": "ecff8976-2cd9-4495-9d78-2487942d2aeb",
+    "chatId": "BnuMHAiZWFyGOHEZLKDq_g",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "Split Deal Sourcing Fee",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:51:28.142Z",
+    "lastMessageTime": "2025-06-27T12:56:55.000Z"
+  },
+  {
+    "id": "30bcdfc8-be07-49ca-83fc-9b9cbd64e8fe",
+    "chatId": "yktCF3G4VCWExZAnvO_eHw",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "Mercado Livre Liverpool 🇬🇧",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:51:28.142Z",
+    "lastMessageTime": "2025-07-02T02:46:52.000Z"
+  },
+  {
+    "id": "704a1178-17c3-411f-aa95-ed51884e3ee0",
+    "chatId": "3lgXRHlGXzmL80zrNnkbUQ",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "Matrix SA Secrets",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:51:28.142Z",
+    "lastMessageTime": "2024-11-18T18:52:28.000Z"
+  },
+  {
+    "id": "0b5ee564-f9c3-4767-b4fa-321b8377381e",
+    "chatId": "0tAccjjOX8-9td0evn26Kg",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "554891980004",
+    "contactPhone": "554891980004",
+    "isGroup": false,
+    "createdAt": "2025-07-02T15:51:28.142Z",
+    "lastMessageTime": "2025-04-24T20:15:07.000Z"
+  },
+  {
+    "id": "2d37ffbe-bd83-4005-8dd2-c1187dfb056e",
+    "chatId": "_fBAqu--UvWfZZ9kr1dzPQ",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "Brasileiros em Manchester",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:51:28.142Z",
+    "lastMessageTime": "2025-07-01T11:45:32.000Z"
+  },
+  {
+    "id": "daa28995-7fd2-4bce-8e19-cfd5a55e380d",
+    "chatId": "5hOrKurvWRuQ688DMljuJg",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "📈 🏠 Peachy Estates R2R Deals 🏠 📈",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:51:28.142Z",
+    "lastMessageTime": "2025-07-01T16:41:45.000Z"
+  },
+  {
+    "id": "095762be-a060-4ad8-949f-1a33f149b1d4",
+    "chatId": "5YnDttt6XbaPjtcmtjKdPQ",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "R2R HMO / SA / BMV / LOA",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:51:28.142Z",
+    "lastMessageTime": "2025-07-01T10:44:34.000Z"
+  },
+  {
+    "id": "41cc5143-de46-4b65-80c4-cc93b55bdad3",
+    "chatId": "920bokvmWearG31JhuIMYA",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "Airbrick & Lev Properties",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:51:28.142Z",
+    "lastMessageTime": "2025-06-30T16:22:52.000Z"
+  },
+  {
+    "id": "d7f9da3d-f4a6-48f6-b0d6-5872ff35c21f",
+    "chatId": "t8mdj4ihWCGSGvcOH0Nfsg",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "Assuntos Gerais #1 💬",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:51:28.143Z",
+    "lastMessageTime": "2025-07-01T19:25:12.000Z"
+  },
+  {
+    "id": "679428a9-e754-43ff-a66e-717e6d7e6502",
+    "chatId": "2bXqt11nUPymcuf3TjqlfA",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "447830587593",
+    "contactPhone": "447830587593",
+    "isGroup": false,
+    "createdAt": "2025-07-02T15:51:28.143Z",
+    "lastMessageTime": "2025-06-30T21:15:31.000Z"
+  },
+  {
+    "id": "c8027aa9-c42c-4fb5-b8c0-a495933edeef",
+    "chatId": "G07zeab0XrGuZkBYU03n0w",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "⭕️ R2R Deals 2025 By Mo Nomaan PRIVATE",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T15:51:28.143Z",
+    "lastMessageTime": "2025-06-11T15:44:57.000Z"
+  },
+  {
+    "id": "5066ccab-5afa-4b0b-bfeb-224bff3c7d24",
+    "chatId": "uwAKkzjZXeqPktpRL3Pcfg",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "Unknown Contact",
+    "contactPhone": "",
+    "isGroup": false,
+    "createdAt": "2025-07-02T15:54:14.482Z",
+    "lastMessageTime": "2025-07-02T15:54:14.482Z"
+  },
+  {
+    "id": "457dfb87-94b9-400f-ab52-38bca54f6e2e",
+    "chatId": "PxtmHUokXpu5xEVubC3JtQ",
+    "accountId": "JxvvgAJESYCox3PxtEANhw",
+    "contactName": "BRASILEIROS EM DUBAI",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-02T16:13:59.908Z",
+    "lastMessageTime": "2025-06-29T09:00:15.000Z"
+  }
+]
