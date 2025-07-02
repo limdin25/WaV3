@@ -434,6 +434,7 @@ app.get('/api/auth/unipile/callback', (req, res) => {
 // Unipile auth callback endpoint (for hosted auth wizard)
 app.post('/api/auth/unipile/callback', express.json(), async (req, res) => {
   try {
+    console.log('📩 Webhook hit:', req.body);
     console.log('🎯 Unipile auth callback received!');
     console.log('📦 Callback payload:', JSON.stringify(req.body, null, 2));
     console.log('📋 Headers:', req.headers);
@@ -446,6 +447,9 @@ app.post('/api/auth/unipile/callback', express.json(), async (req, res) => {
       console.log('🆔 Account ID:', data.account_id);
       
       // Find pending connection by user ID (stored as 'name' in auth request)
+      console.log('🔍 Looking for pending connection with userId:', data.name);
+      console.log('🔍 All pending connections:', connections.filter(c => c.type === 'whatsapp_pending').map(c => ({id: c.id, userId: c.userId, type: c.type})));
+      
       const pendingConnection = connections.find(c => 
         c.userId === data.name && 
         c.type === 'whatsapp_pending'
@@ -461,11 +465,36 @@ app.post('/api/auth/unipile/callback', express.json(), async (req, res) => {
         pendingConnection.connectedAt = new Date().toISOString();
         delete pendingConnection.authUrl;
         
+        console.log('💾 Parsed WhatsApp account ID being saved:', data.account_id);
+        console.log('💾 Connection status being saved:', 'connected');
+        
         await saveData();
-        console.log('💾 WhatsApp account connected and saved:', data.account_id);
+        console.log('✅ WhatsApp account connected and saved successfully:', data.account_id);
+        
+        // Trigger immediate sync for this new account
+        console.log('🔄 Triggering initial message sync for new account...');
+        // Note: Auto-sync will pick up this new account on next cycle
+        
       } else {
         console.log('❌ No pending connection found for user:', data.name);
-        console.log('📋 Current connections:', connections.filter(c => c.type === 'whatsapp_pending'));
+        console.log('📋 All current connections by type:');
+        connections.forEach(c => console.log(`  - ${c.type}: userId=${c.userId}, id=${c.id}`));
+        
+        // Create new connection if none exists
+        console.log('🆕 Creating new WhatsApp connection directly...');
+        const newConnection = {
+          id: uuidv4(),
+          userId: data.name,
+          type: 'whatsapp',
+          accountId: data.account_id,
+          status: 'connected',
+          connectedAt: new Date().toISOString(),
+          createdAt: new Date().toISOString()
+        };
+        
+        connections.push(newConnection);
+        await saveData();
+        console.log('✅ New WhatsApp connection created:', data.account_id);
       }
     } else {
       console.log('❌ Callback status:', data.status);
@@ -499,9 +528,12 @@ app.get('/api/connections', authenticateToken, (req, res) => {
     ['crm', 'whatsapp'].includes(c.type)
   );
 
+  const whatsappConnections = userConnections.filter(c => c.type === 'whatsapp');
+  
   const connectionStatus = {
     crm: userConnections.find(c => c.type === 'crm') || null,
-    whatsapp: userConnections.find(c => c.type === 'whatsapp') || null
+    whatsapp: whatsappConnections.length > 0 ? whatsappConnections[0] : null, // Return first one for UI compatibility
+    whatsappAccounts: whatsappConnections // Return all WhatsApp accounts
   };
 
   res.json(connectionStatus);
@@ -747,7 +779,7 @@ app.get('/api/whatsapp/sync', authenticateToken, async (req, res) => {
 // Webhook Routes
 app.post('/api/webhooks/unipile', express.json(), async (req, res) => {
   try {
-    console.log('Unipile webhook received:', req.body);
+    console.log('📩 Webhook hit:', req.body);
     console.log('🔍 Current connections in memory:', connections.length);
     console.log('🔍 Connection account IDs:', connections.map(c => c.accountId));
     
@@ -771,11 +803,45 @@ app.post('/api/webhooks/unipile', express.json(), async (req, res) => {
         // Create chat if it doesn't exist
         let chat = chats.find(c => c.chatId === data.chat_id);
         if (!chat) {
+          // Fetch chat details from Unipile to get proper contact info
+          let contactName = 'Unknown Contact';
+          let contactPhone = '';
+          let isGroup = false;
+          
+          try {
+            const chatResponse = await axios.get(`${process.env.UNIPILE_DSN}/api/v1/chats/${data.chat_id}`, {
+              headers: {
+                'X-API-KEY': process.env.UNIPILE_API_KEY,
+                'Content-Type': 'application/json'
+              }
+            });
+            
+            const chatData = chatResponse.data;
+            if (chatData.provider_id) {
+              if (chatData.provider_id.endsWith('@g.us')) {
+                // Group chat
+                isGroup = true;
+                contactName = chatData.name || 'Group Chat';
+                contactPhone = '';
+              } else if (chatData.provider_id.endsWith('@s.whatsapp.net')) {
+                // Individual chat
+                contactPhone = chatData.provider_id.replace('@s.whatsapp.net', '');
+                contactName = chatData.name || contactPhone;
+              }
+            }
+          } catch (fetchError) {
+            console.log('⚠️  Could not fetch chat details, using fallback:', fetchError.message);
+            // Fallback to sender name if available
+            contactName = data.sender?.attendee_name || 'Unknown Contact';
+          }
+          
           chat = {
             id: uuidv4(),
             chatId: data.chat_id,
             accountId: data.account_id,
-            contactName: data.sender?.attendee_name || 'Unknown Contact',
+            contactName: contactName,
+            contactPhone: contactPhone,
+            isGroup: isGroup,
             createdAt: new Date().toISOString()
           };
           chats.push(chat);
@@ -796,6 +862,10 @@ app.post('/api/webhooks/unipile', express.json(), async (req, res) => {
 
         messages.push(messageData);
         console.log('📝 Message added to array. Total messages:', messages.length);
+        
+        // Update chat's last message time for proper sorting
+        chat.lastMessageTime = data.timestamp;
+        
         await saveData();
         
         // Forward inbound message to GHL if CRM is connected
@@ -952,8 +1022,13 @@ const autoSyncMessages = async () => {
       // Get all chats for this account
       const accountChats = chats.filter(c => c.accountId === userConnection.accountId);
       
-      // Sync messages for each chat (limit to recent chats to avoid overload)
-      const recentChats = accountChats.slice(0, 10); // Only sync 10 most recent chats
+      // Sort chats by last message time (most recent first) and limit to avoid overload
+      const sortedChats = accountChats.sort((a, b) => {
+        const aTime = new Date(a.lastMessageTime || a.createdAt || 0);
+        const bTime = new Date(b.lastMessageTime || b.createdAt || 0);
+        return bTime - aTime; // Most recent first
+      });
+      const recentChats = sortedChats.slice(0, 20); // Sync 20 most active chats for better coverage
       
       for (const chat of recentChats) {
         try {
@@ -991,6 +1066,9 @@ const autoSyncMessages = async () => {
 
             messages.push(messageData);
             totalSyncedCount++;
+            
+            // Update chat's last message time for proper sorting
+            chat.lastMessageTime = msg.timestamp;
             
             // Skip inbound forwarding for now - it was causing issues
           }

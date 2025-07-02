@@ -2,45 +2,32 @@
 Server running on port 5001
 Environment: development
 Loaded 3 users and 11 connections
-Loaded 6664 messages and 171 chats
+Loaded 6672 messages and 171 chats
 ✅ Data loading completed
 ✅ GHL CRM connected with location: 5ej8HwhFeEuUuFyrIeLO
 ✅ GHL OAuth scopes are configured for message forwarding
 🔄 Starting automatic message sync...
-Saving data: 3 users, 11 connections, 6666 messages, 171 chats
+🔄 Auto-sync running... (5 accounts, 6672 total messages)
+🔄 Auto-sync running... (5 accounts, 6672 total messages)
+🔄 Auto-sync running... (5 accounts, 6672 total messages)
+🔄 Auto-sync running... (5 accounts, 6672 total messages)
+🔄 Auto-sync running... (5 accounts, 6672 total messages)
+Saving data: 3 users, 11 connections, 6674 messages, 171 chats
 Data saved successfully
-🔄 Auto-synced 2 new messages
-🔄 Auto-sync running... (5 accounts, 6666 total messages)
-🔄 Auto-sync running... (5 accounts, 6666 total messages)
+🔄 Auto-synced 1 new messages
+Saving data: 3 users, 11 connections, 6674 messages, 171 chats
+Data saved successfully
+🔄 Auto-synced 1 new messages
 📤 Sending message to chatId: DPYglVukWVK12uYeHsZfdA, contact: +447863992555
-📤 Message: "ss"
+📤 Message: "bnmb"
 🔗 Using account: 6EeLOpVOTEmFNiaTyIt1HQ for chat: +447863992555
-Saving data: 3 users, 11 connections, 6667 messages, 171 chats
+Saving data: 3 users, 11 connections, 6675 messages, 171 chats
 Data saved successfully
 ✅ Message sent successfully to +447863992555
-Saving data: 3 users, 11 connections, 6668 messages, 171 chats
+Saving data: 3 users, 11 connections, 6676 messages, 171 chats
 Data saved successfully
 🔄 Auto-synced 1 new messages
-Saving data: 3 users, 11 connections, 6670 messages, 171 chats
-Data saved successfully
-🔄 Auto-synced 1 new messages
-Saving data: 3 users, 11 connections, 6670 messages, 171 chats
-Data saved successfully
-🔄 Auto-synced 1 new messages
-🔄 Auto-sync running... (5 accounts, 6670 total messages)
-🔄 Auto-sync running... (5 accounts, 6670 total messages)
-🔄 Auto-sync running... (5 accounts, 6670 total messages)
-🔄 Auto-sync running... (5 accounts, 6670 total messages)
-🔄 Auto-sync running... (5 accounts, 6670 total messages)
-🔄 Auto-sync running... (5 accounts, 6670 total messages)
-🔄 Auto-sync running... (5 accounts, 6670 total messages)
-🔄 Auto-sync running... (5 accounts, 6670 total messages)
-🔄 Auto-sync running... (5 accounts, 6670 total messages)
-🔄 Auto-sync running... (5 accounts, 6670 total messages)
-Saving data: 3 users, 11 connections, 6671 messages, 171 chats
-Data saved successfully
-🔄 Auto-synced 1 new messages
-Saving data: 3 users, 11 connections, 6672 messages, 171 chats
-Data saved successfully
-🔄 Auto-synced 1 new messages
-🔄 Auto-sync running... (5 accounts, 6672 total messages)
+🔄 Auto-sync running... (5 accounts, 6676 total messages)
+🔄 Auto-sync running... (5 accounts, 6676 total messages)
+🔄 Auto-sync running... (5 accounts, 6676 total messages)
+🔄 Auto-sync running... (5 accounts, 6676 total messages)
