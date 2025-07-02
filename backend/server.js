@@ -318,85 +318,47 @@ app.get('/api/whatsapp/available-accounts', authenticateToken, async (req, res) 
 
 app.post('/api/whatsapp/connect', authenticateToken, async (req, res) => {
   try {
-    const { accountId, createNew } = req.body;
-
-    if (accountId && !createNew) {
-      // Connect to existing Unipile account
-      const existingConnection = connections.find(c => 
-        c.userId === req.user.userId && c.type === 'whatsapp'
-      );
-
-      if (existingConnection) {
-        existingConnection.accountId = accountId;
-        existingConnection.updatedAt = new Date().toISOString();
-      } else {
-        connections.push({
-          id: uuidv4(),
-          userId: req.user.userId,
-          type: 'whatsapp',
-          accountId: accountId,
-          status: 'connected',
-          createdAt: new Date().toISOString()
-        });
-      }
-
-      await saveData();
-      return res.json({ success: true, accountId, connected: true });
-    }
-
-    // Create new WhatsApp connection using Hosted Auth Wizard
-    const expirationTime = new Date();
-    expirationTime.setHours(expirationTime.getHours() + 1); // 1 hour expiration
-
-    const authRequest = {
+    const { accountId, createNew, phoneNumber } = req.body;
+    // Generate a unique session ID for this connection attempt
+    const sessionId = uuidv4();
+    // Use sessionId as the 'name' for the Unipile hosted auth link
+    const hostedAuthRequest = {
       type: 'create',
       providers: ['WHATSAPP'],
       api_url: process.env.UNIPILE_DSN,
-      expiresOn: expirationTime.toISOString(),
-      name: req.user.userId, // Use user ID as internal identifier
-      notify_url: process.env.WEBHOOK_BASE_URL ? `${process.env.WEBHOOK_BASE_URL}/api/auth/unipile/callback` : undefined,
+      expiresOn: new Date(Date.now() + 10 * 60 * 1000).toISOString(),
+      name: sessionId, // Unique per connection attempt
+      notify_url: undefined,
       success_redirect_url: 'http://localhost:3000/dashboard?whatsapp_connected=true',
       failure_redirect_url: 'http://localhost:3000/dashboard?whatsapp_error=true'
     };
-
-    console.log('Creating hosted auth with request:', authRequest);
-
-    const response = await axios.post(`${process.env.UNIPILE_DSN}/api/v1/hosted/accounts/link`, authRequest, {
-      headers: {
-        'X-API-KEY': process.env.UNIPILE_API_KEY,
-        'Content-Type': 'application/json'
-      }
+    console.log('[DEBUG] Creating hosted auth with request:', hostedAuthRequest);
+    const response = await axios.post(`${process.env.UNIPILE_DSN}/api/v1/hosted/accounts/link`, hostedAuthRequest, {
+      headers: { 'X-API-KEY': process.env.UNIPILE_API_KEY }
     });
-
-    console.log('Hosted auth response:', response.data);
-
-    // Store pending connection with auth session ID
-    const sessionId = uuidv4();
+    if (!response.data || !response.data.url) {
+      console.error('[ERROR] No auth URL received from Unipile:', response.data);
+      return res.status(500).json({ error: 'No auth URL received from Unipile', details: response.data });
+    }
+    // Store pending connection with sessionId and phone number
+    console.log('[DEBUG] Storing pending connection:', { sessionId, userId: req.user.userId, phoneNumber });
     connections.push({
       id: sessionId,
       userId: req.user.userId,
       type: 'whatsapp_pending',
       authUrl: response.data.url,
-      createdAt: new Date().toISOString()
+      createdAt: new Date().toISOString(),
+      phoneNumber: phoneNumber || null,
+      sessionId // Store for matching
     });
-    
     await saveData();
-
-    res.json({ 
-      authUrl: response.data.url,
-      sessionId: sessionId
-    });
-  } catch (error) {
-    console.error('💥 Unipile hosted auth error:');
-    console.error('Status:', error.response?.status);
-    console.error('Data:', JSON.stringify(error.response?.data, null, 2));
-    console.error('Message:', error.message);
-    console.error('Full error:', error);
-    
-    res.status(500).json({ 
-      error: 'Failed to create hosted auth link',
-      details: error.response?.data || error.message 
-    });
+    res.json({ authUrl: response.data.url, sessionId });
+  } catch (err) {
+    console.error('Error creating WhatsApp connection:', err);
+    if (err.response) {
+      console.error('Unipile API error response:', err.response.data);
+    }
+    res.status(500).json({ error: 'Failed to create WhatsApp connection', details: err.message });
   }
 });
 
@@ -411,6 +373,69 @@ app.get('/api/whatsapp/status/:sessionId', authenticateToken, async (req, res) =
 
     if (!connection) {
       return res.status(404).json({ error: 'Session not found' });
+    }
+
+    // If still pending, check with Unipile to see if QR was scanned
+    if (connection.type === 'whatsapp_pending') {
+      try {
+        console.log('🔍 Checking Unipile for new accounts for user:', req.user.userId);
+        
+        // Get all accounts from Unipile
+        const response = await axios.get(`${process.env.UNIPILE_DSN}/api/v1/accounts`, {
+          headers: {
+            'X-API-KEY': process.env.UNIPILE_API_KEY,
+            'Content-Type': 'application/json'
+          }
+        });
+
+        const accounts = response.data.items || [];
+        console.log(`📋 Found ${accounts.length} total accounts in Unipile`);
+        
+        // Look for WhatsApp accounts with matching phone number
+        // Connect the most recent account with status OK (newly scanned accounts)
+        const matchingAccounts = accounts.filter(account => {
+          const hasWhatsApp = account.type === 'WHATSAPP' && account.sources.some(source => 
+            source.status === 'OK'
+          );
+          return (
+            hasWhatsApp &&
+            connection.phoneNumber &&
+            account.name === connection.phoneNumber
+          );
+        });
+        // Sort by created_at descending (most recent first)
+        matchingAccounts.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+        if (matchingAccounts.length > 0) {
+          const matchedAccount = matchingAccounts[0];
+          console.log('[DEBUG] Matched WhatsApp account by phone number and recency:', matchedAccount.id);
+          // Update the pending connection
+          connection.type = 'whatsapp';
+          connection.accountId = matchedAccount.id; // Fixed: use .id not .account_id
+          connection.status = 'connected';
+          connection.connectedAt = new Date().toISOString();
+          delete connection.authUrl;
+          await saveData();
+          console.log('🎉 Connected WhatsApp account from QR scan:', matchedAccount.id);
+          return res.json({ connected: true, accountId: matchedAccount.id }); // Return immediately
+        }
+        // Fallback: match by sessionId (if Unipile ever supports it)
+        for (const account of accounts) {
+          if (account.name === connection.sessionId) {
+            console.log('[DEBUG] Matched WhatsApp account by sessionId:', connection.sessionId);
+            // Update the pending connection
+            connection.type = 'whatsapp';
+            connection.accountId = account.id; // Fixed: use .id not .account_id
+            connection.status = 'connected';
+            connection.connectedAt = new Date().toISOString();
+            delete connection.authUrl;
+            await saveData();
+            console.log('🎉 Connected WhatsApp account from QR scan:', account.id);
+            return res.json({ connected: true, accountId: account.id }); // Return immediately
+          }
+        }
+      } catch (error) {
+        console.log('⚠️ Error checking Unipile accounts:', error.message);
+      }
     }
 
     const connected = connection.type === 'whatsapp';
@@ -647,6 +672,11 @@ app.post('/api/whatsapp/send', authenticateToken, async (req, res) => {
     }
 
     console.log(`🔗 Using account: ${userConnection.accountId} for chat: ${chat.contactName}`);
+
+    // Log group status for debugging but don't block
+    if (chat.isGroup) {
+      console.log(`📱 Attempting to send to GROUP: ${chat.contactName}`);
+    }
 
     // Send message via Unipile API
     const response = await axios.post(`${process.env.UNIPILE_DSN}/api/v1/chats/${chatId}/messages`, {
@@ -1006,21 +1036,140 @@ app.get('/api/webhooks/conversation-provider', (req, res) => {
 // Auto-sync function that runs continuously
 const autoSyncMessages = async () => {
   try {
-    // Get all active WhatsApp connections
+    // Check for any improper connections (without QR code scan)
+    const impropercConnections = connections.filter(c => 
+      c.type === 'whatsapp' && 
+      c.status === 'connected' && 
+      c.accountId && 
+      !c.connectedAt
+    );
+    
+    if (impropercConnections.length > 0 && Date.now() % 60000 < 1000) {
+      console.log(`⚠️  Found ${impropercConnections.length} WhatsApp connections without QR code scan - these will NOT be synced`);
+      impropercConnections.forEach(conn => {
+        console.log(`   - Account ${conn.accountId} (missing connectedAt timestamp)`);
+      });
+    }
+
+    // Get only WhatsApp connections that were properly connected via QR code scan
+    // These connections have 'connectedAt' timestamp set when QR code was scanned
     const whatsappConnections = connections.filter(c => 
-      c.type === 'whatsapp' && c.status === 'connected' && c.accountId
+      c.type === 'whatsapp' && 
+      c.status === 'connected' && 
+      c.accountId && 
+      c.connectedAt // Only sync accounts that were connected via QR code scan
     );
 
-    if (whatsappConnections.length === 0) {
-      return; // No connections to sync
+    // Validate each connection is still active in Unipile
+    const validConnections = [];
+    for (const connection of whatsappConnections) {
+      try {
+        const response = await axios.get(`${process.env.UNIPILE_DSN}/api/v1/accounts/${connection.accountId}`, {
+          headers: {
+            'X-API-KEY': process.env.UNIPILE_API_KEY,
+            'Content-Type': 'application/json'
+          }
+        });
+        
+        const isWorking = response.data.sources.some(source => source.status === 'OK');
+        if (isWorking) {
+          validConnections.push(connection);
+        } else {
+          console.log(`⚠️  Account ${connection.accountId} is no longer active in Unipile, skipping sync`);
+        }
+      } catch (error) {
+        console.log(`⚠️  Account ${connection.accountId} not found in Unipile, removing from local connections`);
+        // Remove invalid connection from local storage
+        const connectionIndex = connections.findIndex(c => c.id === connection.id);
+        if (connectionIndex > -1) {
+          connections.splice(connectionIndex, 1);
+          await saveData();
+        }
+      }
+    }
+    
+    if (validConnections.length === 0) {
+      return; // No valid connections to sync
     }
 
     let totalSyncedCount = 0;
 
     // Sync messages from each connected account
-    for (const userConnection of whatsappConnections) {
-      // Get all chats for this account
+    for (const userConnection of validConnections) {
+      console.log(`🔍 DEBUG: Processing account ${userConnection.accountId} for user ${userConnection.userId}`);
+      
+      // STEP 1: Discover new chats from Unipile for this account
+      try {
+        console.log(`🔍 DEBUG: Fetching all chats from Unipile and filtering for account ${userConnection.accountId}`);
+        const chatsResponse = await axios.get(`${process.env.UNIPILE_DSN}/api/v1/chats`, {
+          headers: {
+            'X-API-KEY': process.env.UNIPILE_API_KEY,
+            'Content-Type': 'application/json'
+          },
+          params: {
+            limit: 100 // Get up to 100 chats to ensure we find account-specific ones
+          }
+        });
+        
+        const allUnipileChats = chatsResponse.data.items || [];
+        console.log(`🔍 DEBUG: Found ${allUnipileChats.length} total chats in Unipile`);
+        
+        // Filter chats for this specific account
+        const unipileChats = allUnipileChats.filter(chat => chat.account_id === userConnection.accountId);
+        console.log(`🔍 DEBUG: Found ${unipileChats.length} chats for account ${userConnection.accountId}`);
+        
+        // Add any new chats that don't exist locally
+        let newChatsCount = 0;
+        for (const unipileChat of unipileChats) {
+          const existingChat = chats.find(c => c.chatId === unipileChat.id && c.accountId === userConnection.accountId);
+          if (!existingChat) {
+            console.log(`🔍 DEBUG: Discovering new chat ${unipileChat.id} for account ${userConnection.accountId}`);
+            
+            // Extract contact info
+            let contactName = 'Unknown Contact';
+            let contactPhone = '';
+            let isGroup = false;
+            
+            if (unipileChat.provider_id) {
+              if (unipileChat.provider_id.endsWith('@g.us')) {
+                isGroup = true;
+                contactName = unipileChat.name || 'Group Chat';
+                contactPhone = '';
+              } else if (unipileChat.provider_id.endsWith('@s.whatsapp.net')) {
+                contactPhone = unipileChat.provider_id.replace('@s.whatsapp.net', '');
+                contactName = unipileChat.name || contactPhone;
+              }
+            }
+            
+            const newChat = {
+              id: uuidv4(),
+              chatId: unipileChat.id,
+              accountId: userConnection.accountId,
+              contactName: contactName,
+              contactPhone: contactPhone,
+              isGroup: isGroup,
+              createdAt: new Date().toISOString(),
+              lastMessageTime: unipileChat.last_message_time || new Date().toISOString()
+            };
+            
+            chats.push(newChat);
+            newChatsCount++;
+            console.log(`✅ DEBUG: Added new chat ${unipileChat.id} (${contactName}) for account ${userConnection.accountId}`);
+          }
+        }
+        
+        if (newChatsCount > 0) {
+          console.log(`🔍 DEBUG: Discovered ${newChatsCount} new chats for account ${userConnection.accountId}`);
+          await saveData(); // Save new chats immediately
+        }
+        
+      } catch (chatDiscoveryError) {
+        console.error(`❌ DEBUG: Failed to discover chats for account ${userConnection.accountId}:`, chatDiscoveryError.message);
+      }
+      
+      // STEP 2: Get all chats for this account (including newly discovered ones)
       const accountChats = chats.filter(c => c.accountId === userConnection.accountId);
+      console.log(`🔍 DEBUG: Found ${accountChats.length} total chats for account ${userConnection.accountId}`);
       
       // Sort chats by last message time (most recent first) and limit to avoid overload
       const sortedChats = accountChats.sort((a, b) => {
@@ -1029,9 +1178,16 @@ const autoSyncMessages = async () => {
         return bTime - aTime; // Most recent first
       });
       const recentChats = sortedChats.slice(0, 20); // Sync 20 most active chats for better coverage
+      console.log(`🔍 DEBUG: Will sync ${recentChats.length} recent chats for account ${userConnection.accountId}`);
+      
+      if (recentChats.length > 0) {
+        console.log(`🔍 DEBUG: Recent chats for account ${userConnection.accountId}:`, 
+          recentChats.map(c => `${c.chatId} (${c.contactName})`).join(', '));
+      }
       
       for (const chat of recentChats) {
         try {
+          console.log(`🔍 DEBUG: Syncing messages for chat ${chat.chatId} (${chat.contactName}) in account ${userConnection.accountId}`);
           const response = await axios.get(`${process.env.UNIPILE_DSN}/api/v1/chats/${chat.chatId}/messages`, {
             headers: {
               'X-API-KEY': process.env.UNIPILE_API_KEY
@@ -1042,12 +1198,17 @@ const autoSyncMessages = async () => {
           });
 
           const newMessages = response.data.items || [];
+          console.log(`🔍 DEBUG: Found ${newMessages.length} messages in chat ${chat.chatId}`);
 
           for (const msg of newMessages) {
             // Check if message already exists  
             const existingMessage = messages.find(m => m.messageId === msg.id);
-            if (existingMessage) continue;
+            if (existingMessage) {
+              console.log(`🔍 DEBUG: Message ${msg.id} already exists, skipping`);
+              continue;
+            }
 
+            console.log(`✅ DEBUG: Syncing new message ${msg.id} in chat ${chat.chatId}`);
             // Store message
             const messageData = {
               id: uuidv4(),
@@ -1073,9 +1234,10 @@ const autoSyncMessages = async () => {
             // Skip inbound forwarding for now - it was causing issues
           }
         } catch (chatError) {
-          // Skip failed chats but don't log to avoid spam
-          if (chatError.response?.status !== 404) {
-            console.error(`Error syncing chat ${chat.chatId}:`, chatError.message);
+          // Enhanced error logging for debugging
+          console.error(`❌ DEBUG: Error syncing chat ${chat.chatId} (${chat.contactName}) in account ${userConnection.accountId}:`, chatError.message);
+          if (chatError.response?.status) {
+            console.error(`❌ DEBUG: HTTP Status: ${chatError.response.status}, Data:`, chatError.response.data);
           }
         }
       }
@@ -1089,7 +1251,7 @@ const autoSyncMessages = async () => {
     
     // Log every 30 seconds to show auto-sync is working
     if (Date.now() % 30000 < 1000) {
-      console.log(`🔄 Auto-sync running... (${whatsappConnections.length} accounts, ${messages.length} total messages)`);
+      console.log(`🔄 Auto-sync running... (${whatsappConnections.length} QR-connected accounts, ${messages.length} total messages)`);
     }
   } catch (error) {
     console.error('Auto-sync error:', error.message);
