@@ -19,5 +19,12 @@
     "password": "$2a$10$Bp3QshpoGLIplWUUHF/tSewDRgQLDY8LFuSfgSEmwLDDZzIF.Ta3S",
     "name": "Demo User",
     "createdAt": "2025-07-01T12:25:19.839Z"
+  },
+  {
+    "id": "35c334f9-60d2-4177-9a64-257526733534",
+    "email": "debug@test.com",
+    "password": "$2a$10$vdz.bdfTK1PkpkrqbfpuYOHwp7h1RKHo.hFMq6k4cxl9IxPTzSBP.",
+    "name": "Debug User",
+    "createdAt": "2025-07-02T05:55:29.044Z"
   }
 ]

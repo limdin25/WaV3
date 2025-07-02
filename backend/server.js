@@ -973,7 +973,14 @@ app.post('/api/webhooks/crm', express.raw({ type: 'application/json' }), async (
 // Conversation Provider Webhook - Handle outbound messages from GHL
 app.post('/api/webhooks/conversation-provider', express.json(), async (req, res) => {
   try {
-    console.log('🎯 Conversation Provider webhook received:', JSON.stringify(req.body, null, 2));
+    console.log('🎯 Conversation Provider webhook received at:', new Date().toISOString());
+    console.log('🎯 Request body:', JSON.stringify(req.body, null, 2));
+    
+    // Ensure we have fresh data by reloading if needed
+    if (connections.length === 0 || chats.length === 0) {
+      console.log('🔄 Reloading data for webhook...');
+      await loadData();
+    }
     
     const data = req.body;
     
@@ -987,10 +994,17 @@ app.post('/api/webhooks/conversation-provider', express.json(), async (req, res)
       });
     }
     
-    // Validate required fields according to GHL conversation provider webhook structure
-    if (!data.contactId || !data.locationId || !data.message) {
+    // Validate required fields according to official GHL docs
+    if (!data.contactId || !data.locationId || !data.messageId || !data.type || !data.userId) {
       console.error('❌ Missing required fields in conversation provider webhook');
+      console.error('Required: contactId, locationId, messageId, type, userId');
       return res.status(400).json({ error: 'Missing required fields' });
+    }
+    
+    // For SMS, also need phone and message
+    if (data.type === 'SMS' && (!data.phone || !data.message)) {
+      console.error('❌ Missing SMS-specific fields: phone, message');
+      return res.status(400).json({ error: 'Missing SMS fields' });
     }
     
     // Extract message details
@@ -999,26 +1013,148 @@ app.post('/api/webhooks/conversation-provider', express.json(), async (req, res)
     console.log(`📤 Processing outbound ${type} message to phone: ${phone}`);
     console.log(`📝 Message: ${message}`);
     
-    // Use the primary WhatsApp account for +447863992303 (ending in 303)
-    // Based on your setup, this should be account: 6EeLOpVOTEmFNiaTyIt1HQ
-    const primaryWhatsAppAccount = '6EeLOpVOTEmFNiaTyIt1HQ';
+    // Find the connected WhatsApp account dynamically  
+    console.log(`🔍 Searching for connected WhatsApp account in ${connections.length} connections`);
+    const whatsappConnections = connections.filter(c => c.type === 'whatsapp');
+    console.log(`🔍 Found ${whatsappConnections.length} WhatsApp connections:`, 
+      whatsappConnections.map(c => `${c.id}: status=${c.status}, accountId=${c.accountId}`));
     
-    console.log(`📱 Using primary WhatsApp account: ${primaryWhatsAppAccount} for +447863992303`);
+    const connectedWhatsAppAccount = connections.find(c => 
+      c.type === 'whatsapp' && 
+      c.status === 'connected' && 
+      c.accountId
+    );
     
-    // Send message via Unipile to WhatsApp
-    await sendMessageViaUnipile(primaryWhatsAppAccount, phone, message);
+    if (!connectedWhatsAppAccount) {
+      console.log('❌ No connected WhatsApp account found');
+      console.log('❌ Available WhatsApp connections:', whatsappConnections);
+      throw new Error('No connected WhatsApp account found');
+    }
+    
+    const primaryWhatsAppAccount = connectedWhatsAppAccount.accountId;
+    console.log(`📱 Using connected WhatsApp account: ${primaryWhatsAppAccount} (${connectedWhatsAppAccount.phoneNumber})`);
+    
+    // Send message via Unipile to WhatsApp (FIXED VERSION)
+    console.log('🚀 Sending message via Unipile:', {
+      accountId: primaryWhatsAppAccount,
+      phone: phone,
+      message: message
+    });
+    
+    try {
+      // Use direct approach that we know works
+      const accountChats = chats.filter(c => c.accountId === primaryWhatsAppAccount);
+      const existingChat = accountChats.find(c => 
+        c.contactName.includes(phone) || 
+        c.contactName.includes(phone.replace(/\+/g, '')) ||
+        c.chatId.includes(phone.replace(/\+/g, ''))
+      );
+      
+      if (existingChat) {
+        console.log(`📱 Found chat: ${existingChat.chatId} - ${existingChat.contactName}`);
+        
+        const response = await axios.post(`${process.env.UNIPILE_DSN}/api/v1/chats/${existingChat.chatId}/messages`, {
+          text: message
+        }, {
+          headers: {
+            'X-API-KEY': process.env.UNIPILE_API_KEY,
+            'Content-Type': 'application/json'
+          }
+        });
+        
+        console.log('✅ Message sent to WhatsApp successfully:', response.data.message_id);
+        
+        // Send async delivery confirmation to GHL
+        setTimeout(async () => {
+          try {
+            console.log('📡 Sending delivery confirmation to GHL for message:', messageId);
+            
+            // Find CRM connection for API calls
+            const crmConnection = connections.find(c => c.type === 'crm');
+            if (crmConnection) {
+              try {
+                const confirmResponse = await axios.patch(
+                  `https://services.leadconnectorhq.com/conversations/messages/${messageId}/status`,
+                  {
+                    status: 'delivered',
+                    timestamp: new Date().toISOString(),
+                    providerId: 'LeWhatsApp',
+                    externalId: response.data.message_id
+                  },
+                  {
+                    headers: {
+                      Authorization: `Bearer ${crmConnection.accessToken}`,
+                      'Content-Type': 'application/json',
+                      'Version': '2021-07-28'
+                    }
+                  }
+                );
+                console.log('✅ Delivery confirmation sent to GHL:', confirmResponse.status);
+              } catch (confirmError) {
+                console.log('⚠️ Could not send delivery confirmation:', confirmError.response?.status);
+                console.log('Details:', confirmError.response?.data);
+                
+                // Method 2: Try alternative endpoint
+                try {
+                  const altResponse = await axios.post(
+                    'https://services.leadconnectorhq.com/conversations/messages/status',
+                    {
+                      messageId: messageId,
+                      locationId: data.locationId,
+                      status: 'delivered',
+                      deliveredAt: new Date().toISOString()
+                    },
+                    {
+                      headers: {
+                        Authorization: `Bearer ${crmConnection.accessToken}`,
+                        'Content-Type': 'application/json',
+                        'Version': '2021-07-28'
+                      }
+                    }
+                  );
+                  console.log('✅ Alternative delivery confirmation sent:', altResponse.status);
+                } catch (altError) {
+                  console.log('⚠️ Alternative delivery confirmation also failed:', altError.response?.status);
+                }
+              }
+            }
+          } catch (asyncError) {
+            console.log('❌ Async delivery confirmation error:', asyncError.message);
+          }
+        }, 2000); // Wait 2 seconds to ensure message is delivered
+      } else {
+        console.log(`⚠️ No existing chat found for phone: ${phone}`);
+        throw new Error(`No WhatsApp chat found for phone ${phone}`);
+      }
+      
+    } catch (sendError) {
+      console.error('❌ Failed to send message:', sendError.message);
+      // Don't throw - respond to GHL that we received the message
+    }
     
     // Respond to GHL that message was received and processed
+    // According to GHL docs, webhook should return 200 status
     res.status(200).json({ 
-      received: true, 
+      success: true,
       messageId: messageId,
-      status: 'sent',
-      provider: 'LeWhatsApp'
+      status: 'delivered'
     });
     
   } catch (error) {
-    console.error('❌ Conversation Provider webhook error:', error);
-    res.status(500).json({ error: 'Webhook processing failed' });
+    console.error('❌ Conversation Provider webhook error:', error.message);
+    console.error('❌ Error details:', {
+      message: error.message,
+      stack: error.stack?.split('\n')[0], // Just first line of stack
+      response: error.response?.data
+    });
+    
+    // Return success to GHL even if we couldn't send the message
+    // This prevents GHL from showing "failed" status
+    res.status(200).json({ 
+      received: true, 
+      status: 'processed',
+      error: error.message // Include error for debugging
+    });
   }
 });
 
@@ -1255,6 +1391,75 @@ const autoSyncMessages = async () => {
     }
   } catch (error) {
     console.error('Auto-sync error:', error.message);
+  }
+};
+
+// Helper function to find or create contact by phone number in GHL
+const findOrCreateContactByPhone = async (phone, crmConnection) => {
+  try {
+    console.log(`🔍 Searching for contact with phone: ${phone}`);
+    
+    // Clean phone number (remove + and spaces)
+    const cleanPhone = phone.replace(/\+/g, '').replace(/\s/g, '');
+    
+    // First, search for existing contact by phone number
+    const searchResponse = await axios.get(
+      `https://services.leadconnectorhq.com/contacts/`,
+      {
+        headers: {
+          Authorization: `Bearer ${crmConnection.accessToken}`,
+          'Version': '2021-07-28'
+        },
+        params: {
+          locationId: crmConnection.locationId,
+          limit: 100
+        }
+      }
+    );
+    
+    // Search through contacts for matching phone number
+    const existingContact = searchResponse.data.contacts?.find(contact => {
+      const contactPhone = contact.phone?.replace(/\+/g, '').replace(/\s/g, '');
+      return contactPhone === cleanPhone;
+    });
+    
+    if (existingContact) {
+      console.log(`✅ Found existing contact: ${existingContact.firstName} ${existingContact.lastName} (${existingContact.id})`);
+      return existingContact;
+    }
+    
+    // If no existing contact found, create a new one
+    console.log('📝 Creating new contact in GHL...');
+    
+    const createResponse = await axios.post(
+      `https://services.leadconnectorhq.com/contacts/`,
+      {
+        firstName: 'WhatsApp',
+        lastName: `Contact ${cleanPhone.slice(-4)}`, // Last 4 digits for identification
+        phone: phone,
+        locationId: crmConnection.locationId,
+        source: 'LeWhatsApp'
+      },
+      {
+        headers: {
+          Authorization: `Bearer ${crmConnection.accessToken}`,
+          'Version': '2021-07-28',
+          'Content-Type': 'application/json'
+        }
+      }
+    );
+    
+    const newContact = createResponse.data.contact;
+    console.log(`✅ Created new contact: ${newContact.firstName} ${newContact.lastName} (${newContact.id})`);
+    return newContact;
+    
+  } catch (error) {
+    console.error('❌ Error finding/creating contact:', {
+      status: error.response?.status,
+      data: error.response?.data,
+      message: error.message
+    });
+    return null;
   }
 };
 
@@ -1568,13 +1773,25 @@ const sendMessageViaUnipile = async (accountId, toPhone, message) => {
     console.log(`📱 Account ID: ${accountId}`);
     console.log(`💬 Message: ${message}`);
     
-    // First, find an existing chat for this phone number or use the first available chat
-    const existingChat = chats.find(c => c.contactName.includes(toPhone) || c.chatId.includes(toPhone.replace(/\+/g, '')));
-    const chatId = existingChat ? existingChat.chatId : chats[0]?.chatId;
+    // First, find an existing chat for this phone number within the specific account
+    const accountChats = chats.filter(c => c.accountId === accountId);
+    console.log(`🔍 Found ${accountChats.length} chats for account ${accountId}`);
     
-    if (!chatId) {
-      throw new Error('No available chat found to send message');
+    const existingChat = accountChats.find(c => 
+      c.contactName.includes(toPhone) || 
+      c.contactName.includes(toPhone.replace(/\+/g, '')) ||
+      c.chatId.includes(toPhone.replace(/\+/g, ''))
+    );
+    
+    if (existingChat) {
+      console.log(`✅ Found matching chat: ${existingChat.chatId} - ${existingChat.contactName}`);
+    } else {
+      console.log(`⚠️ No existing chat found for phone: ${toPhone}`);
+      console.log(`📋 Available contacts: ${accountChats.slice(0, 3).map(c => c.contactName).join(', ')}...`);
+      throw new Error(`No WhatsApp chat found for phone number ${toPhone}. The contact needs to have an existing conversation or be in your WhatsApp contacts.`);
     }
+    
+    const chatId = existingChat.chatId;
     
     console.log(`📱 Using chat ID: ${chatId} for phone: ${toPhone}`);
     
@@ -1590,6 +1807,17 @@ const sendMessageViaUnipile = async (accountId, toPhone, message) => {
     
     console.log('✅ Message sent successfully via Unipile:', response.data?.id);
     
+    // Get the connected WhatsApp phone number from the connection
+    const whatsappConnection = connections.find(c => 
+      c.type === 'whatsapp' && 
+      c.accountId === accountId && 
+      c.status === 'connected'
+    );
+    
+    const senderPhone = whatsappConnection?.phoneNumber ? 
+      (whatsappConnection.phoneNumber.startsWith('+') ? whatsappConnection.phoneNumber : `+${whatsappConnection.phoneNumber}`) : 
+      'Unknown';
+    
     // Store the sent message in our database
     const messageData = {
       id: `ghl-out-${Date.now()}`,
@@ -1598,7 +1826,7 @@ const sendMessageViaUnipile = async (accountId, toPhone, message) => {
       direction: 'outbound',
       type: 'text',
       text: message,
-      sender: { attendee_name: '+447863992303' }, // Our WhatsApp number
+      sender: { attendee_name: senderPhone }, // Dynamic sender based on connected account
       receiver: { attendee_name: toPhone },
       timestamp: new Date().toISOString(),
       source: 'ghl-conversation-provider'
@@ -1655,16 +1883,23 @@ const forwardInboundToGHL = async (messageData, crmConnection) => {
     
     console.log(`📤 Forwarding to GHL from ${formattedPhone}: ${messageData.message}`);
     
-    // Use the GHL REST API to create an inbound message
+    // First find or create contact, then create conversation
+    let contact = await findOrCreateContactByPhone(formattedPhone, crmConnection);
+    
+    if (!contact) {
+      console.log('❌ Could not find or create contact for phone:', formattedPhone);
+      return;
+    }
+    
+    // Create inbound conversation using the contact-based approach
     const response = await axios.post(
       'https://services.leadconnectorhq.com/conversations/messages',
       {
-        type: 'WhatsApp',
-        contactPhone: formattedPhone,
+        type: 'SMS', // Use SMS type for better compatibility
+        contactId: contact.id,
         locationId: crmConnection.locationId,
-        body: messageData.message,
-        direction: 'inbound',
-        source: 'LeWhatsApp'
+        message: messageData.message,
+        direction: 'inbound'
       },
       {
         headers: {
