@@ -2,7 +2,7 @@
   {
     "id": "e4f743e3-0114-4ab6-921c-6b62d2a24683",
     "email": "test@test.com",
-    "password": "$2b$10$TKt0cIqYyhGT51ZGWH8AeO4cGVZxIP/vt8Slt9lTv/ApZUniJ0B2W",
+    "password": "$2b$10$fFkJTZHYAGXafJ1KDwSTau/3i8X6T7ZJtKMwOrGVlLKikZ4c81AjW",
     "name": "Test User",
     "createdAt": "2025-06-30T22:37:29.719Z"
   },
@@ -16,14 +16,14 @@
   {
     "id": "673fec4e-0bf7-41fb-91b4-f5b95a1484aa",
     "email": "demo@demo.com",
-    "password": "$2a$10$Bp3QshpoGLIplWUUHF/tSewDRgQLDY8LFuSfgSEmwLDDZzIF.Ta3S",
+    "password": "$2b$10$UBl.e0CbGgM0dKAIhl0Xi.ZOiwV7G2hD/FqAW4MQqSB3Csj2gDGPK",
     "name": "Demo User",
     "createdAt": "2025-07-01T12:25:19.839Z"
   },
   {
     "id": "35c334f9-60d2-4177-9a64-257526733534",
     "email": "debug@test.com",
-    "password": "$2a$10$vdz.bdfTK1PkpkrqbfpuYOHwp7h1RKHo.hFMq6k4cxl9IxPTzSBP.",
+    "password": "$2b$10$mMzrIgjCC0qXYqXZX0QUWuidYVsZcBaO3pRt1dxBbIyTvsTyPad/6",
     "name": "Debug User",
     "createdAt": "2025-07-02T05:55:29.044Z"
   }
