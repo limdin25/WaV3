@@ -133,16 +133,5 @@
     "createdAt": "2025-07-02T13:22:37.669Z",
     "phoneNumber": "447863992555",
     "sessionId": "c35f5446-d08e-4ae6-9c56-53d307e2e48c"
-  },
-  {
-    "id": "83bdbd85-2c74-4b41-820a-31a391e7520f",
-    "userId": "35c334f9-60d2-4177-9a64-257526733534",
-    "type": "whatsapp",
-    "createdAt": "2025-07-02T15:50:46.910Z",
-    "phoneNumber": "447863992555",
-    "sessionId": "83bdbd85-2c74-4b41-820a-31a391e7520f",
-    "accountId": "JxvvgAJESYCox3PxtEANhw",
-    "status": "connected",
-    "connectedAt": "2025-07-02T15:51:11.658Z"
   }
 ]
