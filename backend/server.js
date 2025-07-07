@@ -13,7 +13,12 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://wa.lemlin.com'],
+  origin: [
+    'http://localhost:3000', 
+    'https://wa.lemlin.com',
+    /\.replit\.dev$/,
+    /\.repl\.co$/
+  ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']

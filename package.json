@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/index.js",
-    "dev": "ts-node src/index.ts",
+    "start": "node start-unified.js",
+    "dev": "node start-unified.js",
     "webhook": "ts-node src/webhook.ts",
     "test": "ts-node src/test.ts"
   },

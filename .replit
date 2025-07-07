@@ -2,7 +2,7 @@ modules = ["nodejs-20", "web", "bash"]
 run = "npm run dev"
 
 [nix]
-channel = "stable-24_05"
+channel = "stable-24_05"  
 packages = ["imagemagick_light", "try", "run"]
 
 [deployment]
@@ -10,24 +10,15 @@ run = ["sh", "-c", "npm run dev"]
 
 [[ports]]
 localPort = 3000
-externalPort = 3000
-
-[[ports]]
-localPort = 5001
 externalPort = 80
 
-[workflows]
-runButton = "Start Full Application"
+[[ports]]
+localPort = 3001
+externalPort = 3001
 
-[[workflows.workflow]]
-name = "Start Full Application"
-author = 44336354
-mode = "parallel"
+[languages.javascript]
+pattern = "**/{*.js,*.jsx,*.ts,*.tsx,*.json}"
+syntax = "javascript"
 
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "cd backend && npm start"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "cd frontend && npm start"
+[languages.javascript.languageServer]
+start = "typescript-language-server --stdio"
