@@ -2115,7 +2115,7 @@
     "contactPhone": "",
     "isGroup": true,
     "createdAt": "2025-07-06T19:52:08.338Z",
-    "lastMessageTime": "2025-07-06T21:22:30.000Z"
+    "lastMessageTime": "2025-07-07T11:30:21.000Z"
   },
   {
     "id": "bf30a5ae-12ce-42da-8f2f-edbbe1960205",
@@ -2135,7 +2135,7 @@
     "contactPhone": "",
     "isGroup": true,
     "createdAt": "2025-07-06T19:52:08.339Z",
-    "lastMessageTime": "2025-07-06T21:00:41.000Z"
+    "lastMessageTime": "2025-07-07T11:42:08.000Z"
   },
   {
     "id": "92bb2b43-83f9-40ae-8747-4ec97ad29a82",
@@ -2165,7 +2165,7 @@
     "contactPhone": "",
     "isGroup": true,
     "createdAt": "2025-07-06T19:52:08.339Z",
-    "lastMessageTime": "2025-07-06T20:50:35.000Z"
+    "lastMessageTime": "2025-07-07T12:05:13.000Z"
   },
   {
     "id": "b4733a9c-4451-4874-8c1b-99fb161ce732",
@@ -2305,7 +2305,7 @@
     "contactPhone": "",
     "isGroup": true,
     "createdAt": "2025-07-06T19:52:08.339Z",
-    "lastMessageTime": "2025-07-06T16:14:07.000Z"
+    "lastMessageTime": "2025-07-07T11:27:32.000Z"
   },
   {
     "id": "99ea0030-98a4-467e-bbf6-d83c49b3612c",
@@ -2586,5 +2586,185 @@
     "isGroup": false,
     "createdAt": "2025-07-06T20:23:33.006Z",
     "lastMessageTime": "2025-07-06T22:15:00.000Z"
+  },
+  {
+    "id": "923d2705-e1ff-4b54-8626-0fc6368e7ebe",
+    "chatId": "d7b0tyv-V4SE_nh875y-Xg",
+    "accountId": "uTbqJ-MQTeO3cd4hG6IE8w",
+    "contactName": "NAP - R2R Private GC",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-07T12:50:55.354Z",
+    "lastMessageTime": "2025-07-07T09:32:49.000Z"
+  },
+  {
+    "id": "6ddb44ce-ad82-414b-8a82-112b0b2f78fc",
+    "chatId": "ZZd4xhqrUjWkFbBk9bhsqw",
+    "accountId": "uTbqJ-MQTeO3cd4hG6IE8w",
+    "contactName": "R2R HUB 2 By Mo 🏠",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-07T12:50:55.355Z",
+    "lastMessageTime": "2025-07-04T15:29:26.000Z"
+  },
+  {
+    "id": "39dc6114-f89d-40da-9692-14be718d98f1",
+    "chatId": "QqxvZO16WOGWdxIkCmM3Gw",
+    "accountId": "uTbqJ-MQTeO3cd4hG6IE8w",
+    "contactName": "R2R HUB By Mo 🏠",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-07T12:50:55.355Z",
+    "lastMessageTime": "2025-07-02T19:31:21.000Z"
+  },
+  {
+    "id": "dc7b429e-a555-4974-b710-4d7afd32747c",
+    "chatId": "f78mkPZvXAuIv3ilghECtw",
+    "accountId": "uTbqJ-MQTeO3cd4hG6IE8w",
+    "contactName": "Group Chat",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-07T12:50:55.355Z",
+    "lastMessageTime": "2025-07-04T20:40:23.000Z"
+  },
+  {
+    "id": "e9b6da40-0e4e-4fb0-a350-2a7a4011b3dc",
+    "chatId": "QXgmBu9hVZa7j9TYFccbjA",
+    "accountId": "uTbqJ-MQTeO3cd4hG6IE8w",
+    "contactName": "WORLD ESCORT 🌍",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-07T12:50:55.355Z",
+    "lastMessageTime": "2025-07-07T04:22:12.000Z"
+  },
+  {
+    "id": "08dc3ab3-f5dd-401a-9d66-d573ba06746e",
+    "chatId": "69jZ_hPIWLCIRSqscco5iQ",
+    "accountId": "uTbqJ-MQTeO3cd4hG6IE8w",
+    "contactName": "THE PROPERTY SOURCE GROUP - TPS",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-07T12:50:55.355Z",
+    "lastMessageTime": "2025-07-07T11:50:35.000Z"
+  },
+  {
+    "id": "676369a3-651b-40f2-a444-199ec0f97c8c",
+    "chatId": "S9U_DHkeWR6LznGtxEIzZQ",
+    "accountId": "uTbqJ-MQTeO3cd4hG6IE8w",
+    "contactName": "BrazucaounãoLiverpool🇵🇹🇧🇷🇬🇧",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-07T12:50:55.355Z",
+    "lastMessageTime": "2025-07-07T11:42:08.000Z"
+  },
+  {
+    "id": "85b5c680-7287-4202-affb-5f9f1f4e7a44",
+    "chatId": "Oa9UBBXfVDu9yN_tccROZg",
+    "accountId": "uTbqJ-MQTeO3cd4hG6IE8w",
+    "contactName": "PEN - Property Entrepreneurs Network",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-07T12:50:55.355Z",
+    "lastMessageTime": "2025-07-06T15:11:30.000Z"
+  },
+  {
+    "id": "68fa1c8d-2c14-4f56-af00-d43c977067a6",
+    "chatId": "w2T1aU6mWC-albTit_BRpA",
+    "accountId": "uTbqJ-MQTeO3cd4hG6IE8w",
+    "contactName": "Group Chat",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-07T12:50:55.356Z",
+    "lastMessageTime": "2025-07-07T11:21:11.000Z"
+  },
+  {
+    "id": "25bf7e91-0bc1-4d18-bc89-4336aaceb426",
+    "chatId": "gIXbJerMVJaYxHSrhUHiCw",
+    "accountId": "uTbqJ-MQTeO3cd4hG6IE8w",
+    "contactName": "NFsTay - Funnel group",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-07T12:50:55.356Z",
+    "lastMessageTime": "2025-07-04T10:46:12.000Z"
+  },
+  {
+    "id": "3cf6656f-3bf8-451b-aea3-9fb43fb6900b",
+    "chatId": "IFmQG1iLWeaDjOoogXMNmQ",
+    "accountId": "uTbqJ-MQTeO3cd4hG6IE8w",
+    "contactName": "💥Casa de Massagem💥",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-07T12:50:55.356Z",
+    "lastMessageTime": "2025-07-05T00:27:53.000Z"
+  },
+  {
+    "id": "10c5bd77-e3e8-4d0d-8560-c4660a482fef",
+    "chatId": "59zVH18zXyqob9hhbj40Gg",
+    "accountId": "uTbqJ-MQTeO3cd4hG6IE8w",
+    "contactName": "Eventa Properties",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-07T12:50:55.356Z",
+    "lastMessageTime": "2025-07-06T14:12:18.000Z"
+  },
+  {
+    "id": "bddf65bb-55c7-48f3-8641-718cf54f0853",
+    "chatId": "S60pW4BEWaWrlfT_tj9vBA",
+    "accountId": "uTbqJ-MQTeO3cd4hG6IE8w",
+    "contactName": "⭕️ THE ONLY PROPERTY GROUP - Boutique Property Brokerage ",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-07T12:50:55.356Z",
+    "lastMessageTime": "2025-07-02T19:32:33.000Z"
+  },
+  {
+    "id": "9ba7ea0d-a608-40d9-bd7e-ccb616c06805",
+    "chatId": "BKdKCTOjW0aKbeVhQySgfg",
+    "accountId": "uTbqJ-MQTeO3cd4hG6IE8w",
+    "contactName": "JCSProperty Hands Off Investment Opportunities",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-07T12:50:55.356Z",
+    "lastMessageTime": "2025-03-28T06:33:36.000Z"
+  },
+  {
+    "id": "d5f870fd-dacc-42d3-a507-31f8d8b8de4c",
+    "chatId": "Vyhn8IXXVHK-WjzXPbf9xA",
+    "accountId": "uTbqJ-MQTeO3cd4hG6IE8w",
+    "contactName": "971586971157",
+    "contactPhone": "971586971157",
+    "isGroup": false,
+    "createdAt": "2025-07-07T12:50:55.356Z",
+    "lastMessageTime": "2025-04-15T11:20:53.000Z"
+  },
+  {
+    "id": "977ec97c-1621-4437-b15a-212737e16334",
+    "chatId": "noGPyibDVfa3wWKUC0h0QQ",
+    "accountId": "uTbqJ-MQTeO3cd4hG6IE8w",
+    "contactName": "Distressed Property Group (DPG)",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-07T12:50:55.356Z",
+    "lastMessageTime": "2025-07-07T07:14:33.000Z"
+  },
+  {
+    "id": "96ac8d54-6050-4a6c-a389-b5a7b9bd9215",
+    "chatId": "pXhpQOGmV7mO_8NvdBRsKQ",
+    "accountId": "uTbqJ-MQTeO3cd4hG6IE8w",
+    "contactName": "FX-GOLD KILLER",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-07T12:50:55.356Z",
+    "lastMessageTime": "2025-07-07T05:13:27.000Z"
+  },
+  {
+    "id": "604dc23d-75d8-4612-a389-890ebe297f27",
+    "chatId": "g4Gw03ZVX_-zXDCFvBL9Xg",
+    "accountId": "uTbqJ-MQTeO3cd4hG6IE8w",
+    "contactName": "BLUE FOUNTON TRADING",
+    "contactPhone": "",
+    "isGroup": true,
+    "createdAt": "2025-07-07T12:50:55.357Z",
+    "lastMessageTime": "2025-07-07T05:11:38.000Z"
   }
 ]

@@ -37,7 +37,8 @@
       "Bash(open:*)",
       "Bash(ngrok:*)",
       "WebFetch(domain:help.gohighlevel.com)",
-      "WebFetch(domain:ideas.gohighlevel.com)"
+      "WebFetch(domain:ideas.gohighlevel.com)",
+      "Bash(ss:*)"
     ],
     "deny": []
   }
