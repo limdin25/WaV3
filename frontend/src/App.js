@@ -6,7 +6,6 @@ import Register from './components/Register';
 import Dashboard from './components/Dashboard';
 import WhatsAppInbox from './components/WhatsAppInbox';
 import AuthCallback from './components/AuthCallback';
-import Header from './components/Header';
 import './App.css';
 
 // Create Auth Context
@@ -114,7 +113,6 @@ function App() {
     <AuthProvider>
       <Router>
         <div className="App min-h-screen bg-gray-50">
-          <Header />
           <main>
             <Routes>
               <Route path="/" element={<Navigate to="/dashboard" />} />

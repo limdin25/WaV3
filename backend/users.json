@@ -26,5 +26,12 @@
     "password": "$2b$10$mMzrIgjCC0qXYqXZX0QUWuidYVsZcBaO3pRt1dxBbIyTvsTyPad/6",
     "name": "Debug User",
     "createdAt": "2025-07-02T05:55:29.044Z"
+  },
+  {
+    "id": "b0f8e054-384e-40aa-b7ec-d8e745e60895",
+    "email": "bruteforce@test.com",
+    "password": "$2a$10$jWECocu7gQr2h4D5MVj5quV3M71I9SqtRBgFfCtEVa7WkWtXfBXVq",
+    "name": "BruteForce Test",
+    "createdAt": "2025-07-06T20:38:55.414Z"
   }
 ]
