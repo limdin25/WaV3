@@ -1979,6 +1979,22 @@ app.post('/api/test/conversation-provider', async (req, res) => {
   }
 });
 
+// Root route - redirect to frontend or serve info
+app.get('/', (req, res) => {
+  res.json({
+    name: 'WAV2 - WhatsApp GoHighLevel Integration API',
+    status: 'running',
+    version: '1.0.0',
+    frontend: 'http://localhost:3000',
+    endpoints: {
+      health: '/api/health',
+      auth: '/api/auth/*',
+      whatsapp: '/api/whatsapp/*',
+      webhooks: '/api/webhooks/*'
+    }
+  });
+});
+
 // Health check
 app.get('/api/health', (req, res) => {
   res.json({ 
